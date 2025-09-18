@@ -1,9 +1,10 @@
-import React from 'react'
-
-const Button = () => {
-  return (
-    <div>Button</div>
-  )
-}
-
-export default Button
+const Button = ({ className, style, label }) => {
+    return (
+      <button className={className} style={style}>
+        {label}
+      </button>
+    );
+  };
+  
+  export default Button;
+  
