@@ -8,6 +8,47 @@ import Cardhome from "../components/Cardhome";
 import SignUp from "./../pages/SignUp";
 import StepsCompoent from "../components/StepsCompoent";
 import StepsCompoentReverse from "../components/StepsCompoentReverse";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedinIn,
+  FaPhoneAlt,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
+const blogPosts = [
+  {
+    id: 1,
+    title: "Indian Spices Health Benefits",
+    author: "Mealawve Admin",
+    date: "Jan 22, 2023",
+    category: "People Health",
+    description:
+      "Indian spices are also known for their medicinal properties, such as antibiotic, boost metabolism, antioxidants, & ability to preserve food",
+    image: "/src/assets/images/10.jpg", // replace with your image path
+  },
+  {
+    id: 2,
+    title: "Do I Need a License to Sell Homemade Food?",
+    author: "Mealawve Admin",
+    date: "Jan 21, 2023",
+    category: "Company",
+    description:
+      "An FSSAI food license is essential to run food business in India. It is even critical for F&B operators making less than Rs 12 Lakh annually",
+    image: "/src/assets/images/12.jpg",
+  },
+  {
+    id: 3,
+    title: "How to Start a Tiffin Service from Home?",
+    author: "Mealawve Admin",
+    date: "Jan 21, 2023",
+    category: "Women Power",
+    description:
+      "Some of the guidelines on how to start a tiffin service from home are obtaining FSSAI license, plan for dishes, register on mealawve, etc.",
+    image: "/src/assets/images/11.jpg",
+  },
+];
 
 const Home = () => {
   return (
@@ -150,15 +191,15 @@ const Home = () => {
           />
           <StepsCompoentReverse
             heading="Create Your Account
-"
+  "
             label="Create your profile with the help of your mobile number. Set your email and cuisine preferences and you are good to go.
 
-"
+  "
             src="/src/assets/images/5.webp"
           />
           <StepsCompoent
             heading="Order Homemade Food
-"
+  "
             label="You can choose homemade food from a variety of cuisine. You can place daily as well as advance order."
             src="/src/assets/images/6.webp"
           />
@@ -169,6 +210,317 @@ const Home = () => {
           />
         </div>
       </section>
+
+      {/* Be the “Mealawian” Your Way! */}
+      <div className="w-full flex flex-col justify-center items-center  mt-25 h-175">
+        <div className="w-[38%] m-auto! h-40 flex flex-col justify-center items-center text-center">
+          <p className=" text-[#65AC48] text-4xl font-bold">
+            Be the “Mealawian” Your Way!
+          </p>
+          <p className="font-serif">
+            You will experience an unmatched and unique online homemade food
+            ordering system that can get food delivered which is nowhere less
+            than your own homemade food
+          </p>
+        </div>
+
+        <div className="h-135 w-full flex justify-center items-center">
+          <img
+            height={500}
+            width={500}
+            src="/src/assets/images/8.webp"
+            alt=""
+          />
+          <div className="w-[30%] flex flex-col items-center justify-center text-center p-6">
+            {/* Heading */}
+            <h2 className="text-3xl font-bold text-[#63AB45] underline mb-2">
+              JOIN AS A CUSTOMER
+            </h2>
+
+            <h3 className="text-2xl font-semibold text-[#63AB45] mb-4">
+              Order your choice of homemade food right away
+            </h3>
+
+            <p className="text-gray-700 max-w-2xl mb-6">
+              You can get the best homemade food within no time. You can place
+              online food orders on the go. Also you can place advance orders of
+              food items
+            </p>
+
+            <div className="flex gap-4">
+              <a href="#">
+                <img
+                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  alt="Download on the App Store"
+                  className="h-12"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Get it on Google Play"
+                  className="h-12"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="h-180 w-full flex justify-center items-center">
+        {/* Text Div Left */}
+        <div className="w-[30%] flex flex-col items-center justify-center text-center p-6">
+          {/* Heading */}
+          <h2 className="text-3xl font-bold text-[#63AB45] underline mb-2">
+            JOIN AS A CUSTOMER
+          </h2>
+
+          <h3 className="text-2xl font-semibold text-[#63AB45] mb-4">
+            Order your choice of homemade food right away
+          </h3>
+
+          <p className="text-gray-700 max-w-2xl mb-6">
+            You can get the best homemade food within no time. You can place
+            online food orders on the go. Also you can place advance orders of
+            food items
+          </p>
+
+          <div className="flex gap-4">
+            <a href="#">
+              <img
+                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                alt="Download on the App Store"
+                className="h-12"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Get it on Google Play"
+                className="h-12"
+              />
+            </a>
+          </div>
+        </div>
+        <img height={500} width={500} src="/src/assets/images/8.webp" alt="" />
+      </div>
+
+      <section className=" h-180 w-full bg-[url('/src/assets/images/9.webp')] bg-cover">
+        <section className="w-full flex flex-col items-center justify-center text-center py-8">
+          {/* Title */}
+          <h2 className="text-3xl font-bold mb-4">Blog</h2>
+
+          {/* Subtitle */}
+          <p className="text-gray-700 max-w-2xl mb-5">
+            Mealawian writers are too passionate about sharing our know-how on
+            food. After all, we are food experts!!
+          </p>
+
+          {/* Button */}
+          <button className="border border-[#63AB45] text-[#63AB45] font-semibold px-6 py-1 rounded-md hover:bg-[#63AB45] hover:text-white transition">
+            Read More
+          </button>
+        </section>
+
+        <section className="w-full flex flex-col items-center py-8">
+          {/* Blog Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {blogPosts.map((post) => (
+              <div
+                key={post.id}
+                className="bg-white rounded-2xl shadow-md overflow-hidden w-80">
+                {/* Image */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="h-48 w-full object-cover"
+                />
+
+                {/* Content */}
+                <div className="p-4 text-left">
+                  <h3 className="font-semibold text-lg mb-2">{post.title}</h3>
+                  <p className="text-sm text-gray-500 mb-2">
+                    by {post.author} | {post.date} | {post.category}
+                  </p>
+                  <p className="text-gray-700 text-sm">{post.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation */}
+          <div className="flex justify-between w-full max-w-6xl mt-6 px-6">
+            <a href="#" className="text-[#63AB45] text-sm hover:underline">
+              « Older Entries
+            </a>
+            <a href="#" className="text-[#63AB45] text-sm hover:underline">
+              Next Entries »
+            </a>
+          </div>
+        </section>
+      </section>
+
+      <footer className="bg-white text-gray-800 font-sans">
+        {/* ==== Top Section: Media Logos ==== */}
+        <div className="flex flex-wrap justify-center items-center gap-8 border-b border-gray-300 py-8">
+          <img
+            src="/src/assets/images/14.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/15.webp"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/16.svg"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/17.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/18.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/19.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/20.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+          <img
+            src="/src/assets/images/19.png"
+            alt="Indian Express"
+            className="h-8"
+          />
+        </div>
+
+        {/* ==== Middle Section ==== */}
+        <div className="container mx-auto flex flex-wrap justify-between gap-10 py-10 px-6 md:px-16">
+          {/* Left: Logo & Description */}
+          <div className="w-full md:w-1/3">
+            <img
+              src="/src/assets/images/logo.png"
+              alt="MealAwe Logo"
+              className="h-12 mb-4"
+            />
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              We at Mealawe bring in technology and solutions for building a
+              healthy society by delivering the best homemade food from nearby
+              home chefs.
+            </p>
+            <div className="flex gap-4 text-lg text-gray-700">
+              <a href="#" className="hover:text-green-600">
+                <FaFacebookF />
+              </a>
+              <a href="#" className="hover:text-green-600">
+                <FaInstagram />
+              </a>
+              <a href="#" className="hover:text-green-600">
+                <FaYoutube />
+              </a>
+              <a href="#" className="hover:text-green-600">
+                <FaLinkedinIn />
+              </a>
+            </div>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Company</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Why us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Join Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Contact Us
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Information Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Information</h4>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Terms & Conditions
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Cancellation & Refunds
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-green-600">
+                  Blogs
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div>
+            <h4 className="font-semibold mb-4">Contact us</h4>
+            <p className="text-sm text-gray-600 flex items-center gap-2 mb-2">
+              <FaPhoneAlt className="text-green-600" /> +91-9665 888 488
+            </p>
+            <p className="text-sm text-gray-600 flex items-center gap-2">
+              <MdEmail className="text-green-600" /> help@mealawe.com
+            </p>
+          </div>
+        </div>
+
+        {/* ==== Bottom Section ==== */}
+        <div className="border-t border-gray-300 py-4 px-6 md:px-16 flex flex-wrap justify-between items-center text-sm text-gray-500">
+          <p>
+            Yagy Tech Pvt Ltd (Formerly Known as Climbing Seeds Pvt Ltd). 2025
+            All rights reserved
+          </p>
+          <div className="flex gap-4 mt-3 md:mt-0">
+            <a href="#">
+              <img src="/src/assets/images/22.png" className="h-10" />
+            </a>
+            <a href="#">
+              <img src="/src/assets/images/23.png" className="h-10" />
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
