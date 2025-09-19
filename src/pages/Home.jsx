@@ -224,15 +224,14 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="h-135 w-full flex justify-center items-center">
+        <div className="h-160 mt-10 w-full flex justify-center items-center">
           <img
             height={500}
-            width={500}
+            width={550}
             src="/src/assets/images/8.webp"
             alt=""
           />
-          <div className="w-[30%] flex flex-col items-center justify-center text-center p-6">
-            {/* Heading */}
+          <div className="w-[40%] flex flex-col items-center justify-center text-center p-6">
             <h2 className="text-3xl font-bold text-[#63AB45] underline mb-2">
               JOIN AS A CUSTOMER
             </h2>
@@ -250,15 +249,15 @@ const Home = () => {
             <div className="flex gap-4">
               <a href="#">
                 <img
-                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                  src="/src/assets/images/22.png"
                   alt="Download on the App Store"
                   className="h-12"
                 />
               </a>
               <a href="#">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play"
+                  src="/src/assets/images/23.png"
+                  alt="Download on the App Store"
                   className="h-12"
                 />
               </a>
@@ -266,10 +265,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="h-180 w-full flex justify-center items-center">
-        {/* Text Div Left */}
-        <div className="w-[30%] flex flex-col items-center justify-center text-center p-6">
-          {/* Heading */}
+      <div className="h-160 w-full flex justify-center items-center">
+        <div className="w-[40%] flex flex-col items-center justify-center text-center p-6">
           <h2 className="text-3xl font-bold text-[#63AB45] underline mb-2">
             JOIN AS A CUSTOMER
           </h2>
@@ -287,30 +284,27 @@ const Home = () => {
           <div className="flex gap-4">
             <a href="#">
               <img
-                src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                src="/src/assets/images/22.png"
                 alt="Download on the App Store"
                 className="h-12"
               />
             </a>
             <a href="#">
               <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                alt="Get it on Google Play"
+                src="/src/assets/images/23.png"
+                alt="Download on the App Store"
                 className="h-12"
               />
             </a>
           </div>
         </div>
-        <img height={500} width={500} src="/src/assets/images/8.webp" alt="" />
+        <img height={500} width={550} src="/src/assets/images/25.webp" alt="" />
       </div>
 
       <section className=" h-180 w-full bg-[url('/src/assets/images/9.webp')] bg-cover">
-        <section className="w-full flex flex-col items-center justify-center text-center py-8">
-          {/* Title */}
-          <h2 className="text-3xl font-bold mb-4">Blog</h2>
-
-          {/* Subtitle */}
-          <p className="text-gray-700 max-w-2xl mb-5">
+        <div className="w-full flex flex-col items-center justify-center text-center py-8">
+          <h2 className="text-4xl font-bold mb-4">Blog</h2>
+          <p className=" w-150 text-2xl mb-5">
             Mealawian writers are too passionate about sharing our know-how on
             food. After all, we are food experts!!
           </p>
@@ -319,35 +313,31 @@ const Home = () => {
           <button className="border border-[#63AB45] text-[#63AB45] font-semibold px-6 py-1 rounded-md hover:bg-[#63AB45] hover:text-white transition">
             Read More
           </button>
-        </section>
+        </div>
 
-        <section className="w-full flex flex-col items-center py-8">
-          {/* Blog Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {blogPosts.map((post) => (
+        <div className="w-full flex flex-col items-center">
+          <div className="flex flex-wrap justify-center gap-15">
+            {blogPosts.map((e) => (
               <div
-                key={post.id}
-                className="bg-white rounded-2xl shadow-md overflow-hidden w-80">
-                {/* Image */}
+                key={e.id}
+                className="bg-white rounded-3xl shadow-xl overflow-hidden w-70">
                 <img
-                  src={post.image}
-                  alt={post.title}
+                  src={e.image}
+                  alt={e.title}
                   className="h-48 w-full object-cover"
                 />
 
-                {/* Content */}
                 <div className="p-4 text-left">
-                  <h3 className="font-semibold text-lg mb-2">{post.title}</h3>
-                  <p className="text-sm text-gray-500 mb-2">
-                    by {post.author} | {post.date} | {post.category}
+                  <h3 className="font-semibold text-lg mb-2">{e.title}</h3>
+                  <p className="text-md text-gray-500 mb-2">
+                    {e.author} | {e.date} | {e.category}
                   </p>
-                  <p className="text-gray-700 text-sm">{post.description}</p>
+                  <p className=" ">{e.description}</p>
                 </div>
               </div>
             ))}
           </div>
 
-          {/* Navigation */}
           <div className="flex justify-between w-full max-w-6xl mt-6 px-6">
             <a href="#" className="text-[#63AB45] text-sm hover:underline">
               « Older Entries
@@ -356,64 +346,89 @@ const Home = () => {
               Next Entries »
             </a>
           </div>
-        </section>
+        </div>
       </section>
 
-      <footer className="bg-white text-gray-800 font-sans">
-        {/* ==== Top Section: Media Logos ==== */}
-        <div className="flex flex-wrap justify-center items-center gap-8 border-b border-gray-300 py-8">
-          <img
-            src="/src/assets/images/14.png"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/15.webp"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/16.svg"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/17.png"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/18.png"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/19.png"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/20.png"
-            alt="Indian Express"
-            className="h-8"
-          />
-          <img
-            src="/src/assets/images/19.png"
-            alt="Indian Express"
-            className="h-8"
-          />
+      <footer className="bg-white w-full mt-25 h-170 text-gray-800 font-sans">
+        <p className="text-4xl text-center font-bold">As Seen In</p>
+
+        <div className="w-full flex justify-center border-b border-gray-300 py-">
+          <div className="w-[80%] h-80 mt- flex flex-wrap justify-center gap-10 items-center">
+            <div className="w-50  flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/14.png"
+                alt="Indian Express"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/15.webp"
+                alt="Zee 24 Taas"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/16.svg"
+                alt="Hindustan Times"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/17.png"
+                alt="Pune Times Mirror"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/18.png"
+                alt="Sakal"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/19.png"
+                alt="Kesari"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/20.png"
+                alt="Navbharat"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            <div className="w-50 flex items-center justify-center bg-white">
+              <img
+                src="/src/assets/images/19.png"
+                alt="Navrashtra"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
         </div>
 
-        {/* ==== Middle Section ==== */}
-        <div className="container mx-auto flex flex-wrap justify-between gap-10 py-10 px-6 md:px-16">
-          {/* Left: Logo & Description */}
-          <div className="w-full md:w-1/3">
+        <div className="container h-75 m-auto max-w-11/12 flex flex-wrap justify-between gap-10 py-5 px-6 ">
+          <div className="w-[30%]">
             <img
-              src="/src/assets/images/logo.png"
+              style={{ width: "350px", height: "100px" }}
+              src="/src/assets/images/30.png"
               alt="MealAwe Logo"
               className="h-12 mb-4"
             />
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <p className=" text-gray-600  text-xl mb-4">
               We at Mealawe bring in technology and solutions for building a
               healthy society by delivering the best homemade food from nearby
               home chefs.
@@ -434,9 +449,8 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold text-xl mb-4">Company</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a href="#" className="hover:text-green-600">
@@ -468,7 +482,7 @@ const Home = () => {
 
           {/* Information Links */}
           <div>
-            <h4 className="font-semibold mb-4">Information</h4>
+            <h4 className="font-semibold text-xl mb-4">Information</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
                 <a href="#" className="hover:text-green-600">
@@ -493,9 +507,8 @@ const Home = () => {
             </ul>
           </div>
 
-          {/* Contact Section */}
           <div>
-            <h4 className="font-semibold mb-4">Contact us</h4>
+            <h4 className="font-semibold text-xl mb-4">Contact us</h4>
             <p className="text-sm text-gray-600 flex items-center gap-2 mb-2">
               <FaPhoneAlt className="text-green-600" /> +91-9665 888 488
             </p>
@@ -505,13 +518,12 @@ const Home = () => {
           </div>
         </div>
 
-        {/* ==== Bottom Section ==== */}
         <div className="border-t border-gray-300 py-4 px-6 md:px-16 flex flex-wrap justify-between items-center text-sm text-gray-500">
           <p>
             Yagy Tech Pvt Ltd (Formerly Known as Climbing Seeds Pvt Ltd). 2025
             All rights reserved
           </p>
-          <div className="flex gap-4 mt-3 md:mt-0">
+          <div className="flex  gap-4 mt-0">
             <a href="#">
               <img src="/src/assets/images/22.png" className="h-10" />
             </a>
