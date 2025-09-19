@@ -12,7 +12,7 @@ import SignUp from "./../pages/SignUp";
 
 const Navbar = () => {
   return (
-    <div className="w-full gap-15 text-gray-500 shadow-gray-500 h-25 flex justify-evenly items-center px-6 shadow-xl">
+    <div className="w-full gap-15 text-gray-600 shadow-gray-500 h-25 flex justify-evenly items-center px-6 shadow-xl">
       <div className="flex gap-10">
         <Link to="/" className="hover:text-blue-500">
           <img src="/images/logo.png" height={170} width={170} alt="Logo" />
