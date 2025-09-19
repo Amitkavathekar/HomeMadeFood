@@ -5,10 +5,10 @@ import { LiaSearchSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import JoinUs from "../pages/JoinUs";
 import WhyUs from "../pages/WhyUs";
-import TiffinServiceInpune from "./../pages/TiffinServiceInpune";
-import TiffinServiceInBenglore from "./../pages/TiffinServiceInBenglore";
-import TiffinServiceInKota from "./../pages/TiffinServiceInKota";
-import SignUp from "./../pages/SignUp";
+import TiffinServiceInpune from "../pages/TiffinServiceInpune";
+import TiffinServiceInBenglore from "../pages/TiffinServiceInBenglore";
+import TiffinServiceInKota from "../pages/TiffinServiceInKota";
+import SignUp from "../pages/SignUp";
 
 const Navbar = () => {
   return (
