@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const joinUs = () => {
   return (
-    <div>joinUs</div>
+    <div className='bg-gray-400'>joinUs</div>
   )
 }
 
