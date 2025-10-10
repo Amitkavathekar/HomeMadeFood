@@ -14,9 +14,15 @@ const Navbar = () => {
   return (
     <div className="w-full gap-15 text-gray-600  h-25 flex justify-evenly items-center px-6 bg-white     shadow-xl ">
       <div className="flex gap-10">
-        <Link to="/" className="hover:text-blue-500">
+        <Link
+          to="/"
+          className="hover:text-blue-500"
+        >
           <img
-            style={{ width: "200px", height: "50px" }}
+            style={{
+              width: "200px",
+              height: "50px",
+            }}
             src="/images/logo.png"
             alt="Logo"
           />
@@ -25,14 +31,18 @@ const Navbar = () => {
         {/* Menu */}
         <div className="flex items-center gap-6 text-bold shadow-gray-900 text-xl font-medium">
           {/* About Us Dropdown */}
-          <Menu as="div" className="relative inline-block text-left">
+          <Menu
+            as="div"
+            className="relative inline-block text-left"
+          >
             <Menu.Button className="inline-flex justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-xl hover:bg-white/20 border-none outline-none">
               About Us
               <svg
                 viewBox="0 0 20 20"
                 fill="black"
                 aria-hidden="true"
-                className="-mr-1 h-5 w-5 text-gray-400">
+                className="-mr-1 h-5 w-5 text-gray-400"
+              >
                 <path
                   d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
                   clipRule="evenodd"
@@ -48,8 +58,11 @@ const Navbar = () => {
                     <Link
                       to="/whyus"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
                       Why Us
                     </Link>
                   )}
@@ -59,8 +72,11 @@ const Navbar = () => {
                     <Link
                       to="/blog"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
                       Blog
                     </Link>
                   )}
@@ -70,8 +86,11 @@ const Navbar = () => {
                     <Link
                       to="/profiletest"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
                       Profile Tests
                     </Link>
                   )}
@@ -79,14 +98,18 @@ const Navbar = () => {
               </div>
             </Menu.Items>
           </Menu>
-          <Menu as="div" className="relative inline-block text-left">
+          <Menu
+            as="div"
+            className="relative inline-block text-left"
+          >
             <Menu.Button className="inline-flex justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-xl hover:bg-white/20 border-none outline-none">
               Tiffin services
               <svg
                 viewBox="0 0 20 20"
                 fill="black"
                 aria-hidden="true"
-                className="-mr-1 h-5 w-5 text-gray-400">
+                className="-mr-1 h-5 w-5 text-gray-400"
+              >
                 <path
                   d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
                   clipRule="evenodd"
@@ -102,9 +125,13 @@ const Navbar = () => {
                     <Link
                       to="/TiffinServiceInpune"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
-                      Tiffin services in pune
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
+                      Tiffin services in
+                      pune
                     </Link>
                   )}
                 </Menu.Item>
@@ -113,9 +140,13 @@ const Navbar = () => {
                     <Link
                       to="/TiffinServiceInBenglore"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
-                      Tiffin services in Benglore
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
+                      Tiffin services in
+                      Benglore
                     </Link>
                   )}
                 </Menu.Item>
@@ -124,9 +155,13 @@ const Navbar = () => {
                     <Link
                       to="/TiffinServiceInKota"
                       className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}>
-                      Tiffin services in kota
+                        active
+                          ? "bg-gray-100 text-gray-500"
+                          : "text-black"
+                      }`}
+                    >
+                      Tiffin services in
+                      kota
                     </Link>
                   )}
                 </Menu.Item>
@@ -135,9 +170,15 @@ const Navbar = () => {
           </Menu>
 
           {/* Other Links */}
-          <Link to="/forcorporates">For Corporates</Link>
-          <Link to="/joinus">Join Us</Link>
-          <Link to="/contactus">Contact Us</Link>
+          <Link to="/forcorporates">
+            For Corporates
+          </Link>
+          <Link to="/joinus">
+            Join Us
+          </Link>
+          <Link to="/contactus">
+            Contact Us
+          </Link>
           <LiaSearchSolid />
         </div>
       </div>
@@ -146,7 +187,9 @@ const Navbar = () => {
       <Link to="/signup">
         <Button
           className="w-75 h-12 rounded-3xl text-2xl text-white font-bold hover:opacity-90 transition"
-          style={{ backgroundColor: "#63AB45" }}
+          style={{
+            backgroundColor: "#63AB45",
+          }}
           label="Order Now"
         />
       </Link>

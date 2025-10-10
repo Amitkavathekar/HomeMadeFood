@@ -139,12 +139,11 @@ const WhyUs = () => {
           alt=""
         />
 
-        <div className="absolute inset-0 border flex-col flex items-center justify-center"> 
+        <div className="absolute inset-0 border flex-col flex items-center justify-center">
           <p className="text-5xl  text-white font-bold">
             Check out What’s Cooking?
           </p>
           <p>this is my prj</p>
-
         </div>
       </section>
     </div>

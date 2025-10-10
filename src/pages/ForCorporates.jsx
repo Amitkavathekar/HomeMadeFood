@@ -146,7 +146,7 @@ const ForCorporates = () => {
         </div>
       </section>
       <section className="h-180 w-full bg-green-500 bg-">
-
+          
       </section>
     </div>
   );

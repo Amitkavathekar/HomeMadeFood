@@ -20,7 +20,8 @@ import { MdEmail } from "react-icons/md";
 const blogPosts = [
   {
     id: 1,
-    title: "Indian Spices Health Benefits",
+    title:
+      "Indian Spices Health Benefits",
     author: "Mealawve Admin",
     date: "Jan 22, 2023",
     category: "People Health",
@@ -30,7 +31,8 @@ const blogPosts = [
   },
   {
     id: 2,
-    title: "Do I Need a License to Sell Homemade Food?",
+    title:
+      "Do I Need a License to Sell Homemade Food?",
     author: "Mealawve Admin",
     date: "Jan 21, 2023",
     category: "Company",
@@ -40,7 +42,8 @@ const blogPosts = [
   },
   {
     id: 3,
-    title: "How to Start a Tiffin Service from Home?",
+    title:
+      "How to Start a Tiffin Service from Home?",
     author: "Mealawve Admin",
     date: "Jan 21, 2023",
     category: "Women Power",
@@ -57,20 +60,37 @@ const Home = () => {
       <section className="flex h-150 w-full justify-between  mt-7 ">
         <div
           className="h-[550px] w-[720px] bg-contain bg-no-repeat"
-          style={{ backgroundImage: `url(${vector1})` }}>
+          style={{
+            backgroundImage: `url(${vector1})`,
+          }}
+        >
           <div className=" ml-40 mt-20  h-120 w-140">
-            <p className="text-7xl font-bold">100%</p>
-            <p className="text-7xl font-bold text-[#63AB45]">Homemade</p>
-            <p className="text-7xl font-bold">Food is</p>
-            <p className="text-6xl font ">Waiting For You</p>
+            <p className="text-7xl font-bold">
+              100%
+            </p>
+            <p className="text-7xl font-bold text-[#63AB45]">
+              Homemade
+            </p>
+            <p className="text-7xl font-bold">
+              Food is
+            </p>
+            <p className="text-6xl font ">
+              Waiting For You
+            </p>
             <p className="text-xl  mt-2">
-              You can get the best homemade food from your neighbourhood homes.
-              The food will be full of soul, health, & taste.
+              You can get the best
+              homemade food from your
+              neighbourhood homes. The
+              food will be full of soul,
+              health, & taste.
             </p>
             <Link to="/signup">
               <Button
                 className="w-65 mt-10 h-12 rounded-3xl text-2xl text-white hover:opacity-90 transition"
-                style={{ backgroundColor: "#63AB45" }}
+                style={{
+                  backgroundColor:
+                    "#63AB45",
+                }}
                 label="Order Now"
               />
             </Link>
@@ -78,7 +98,10 @@ const Home = () => {
         </div>
         <div
           className="h-[600px] w-[630px]  bg-cover bg-no-repeat"
-          style={{ backgroundImage: `url(${isolate})` }}>
+          style={{
+            backgroundImage: `url(${isolate})`,
+          }}
+        >
           <img
             className="h-148 w-135"
             src="/src/assets/images/thali.webp"
@@ -93,7 +116,9 @@ const Home = () => {
           <p className=" flex text-4xl">
             <span className="m-auto font-bold ">
               We DO NOT serve food from{" "}
-              <span className=" text-[#E2394D]">Restaurants!</span>
+              <span className=" text-[#E2394D]">
+                Restaurants!
+              </span>
             </span>
           </p>
 
@@ -122,14 +147,23 @@ const Home = () => {
         <div className="w-full flex justify-center items-center py-12 px-6 bg-white">
           <div className="max-w-3xl text-center">
             <h2 className="text-4xl font-bold mb-4">
-              <span className="text-[#63AB45]">Why Us?</span> – Because you are
-              very
-              <span className="block text-[#63AB45]">Special!</span>
+              <span className="text-[#63AB45]">
+                Why Us?
+              </span>{" "}
+              – Because you are very
+              <span className="block text-[#63AB45]">
+                Special!
+              </span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
-              You will have every reason to count on us for healthy & tasty
-              homemade food from nearby family kitchens. You will find a
-              different concept & flavour while ordering home food from Mealawe.
+              You will have every reason
+              to count on us for healthy
+              & tasty homemade food from
+              nearby family kitchens.
+              You will find a different
+              concept & flavour while
+              ordering home food from
+              Mealawe.
             </p>
           </div>
         </div>
@@ -138,13 +172,21 @@ const Home = () => {
       {/*  */}
       <section className="h-480  flex justify-between  w-full">
         <div className="h-195 bg-contain  w-[45%]">
-          <img src="/src/assets/images/imgi_6_ui-elements-01 (1).webp" alt="" />
+          <img
+            src="/src/assets/images/imgi_6_ui-elements-01 (1).webp"
+            alt=""
+          />
           <div className="mt-5 flex justify-end">
             <div className="flex flex-col">
-              <p className="text-[#63AB45] w-60 text-6xl">Advance Order</p>
+              <p className="text-[#63AB45] w-60 text-6xl">
+                Advance Order
+              </p>
               <p className="text-3xl w-80">
-                You can order your choice of homemade food in advance for up to
-                2 days. Now you can plan for a perfect weekend
+                You can order your
+                choice of homemade food
+                in advance for up to 2
+                days. Now you can plan
+                for a perfect weekend
               </p>
             </div>
           </div>
@@ -158,20 +200,32 @@ const Home = () => {
 
         <div className=" h-470 w-[45%]">
           <div className="mt-35">
-            <p className="text-[#63AB45]  w-90 text-6xl">All Day Order</p>
+            <p className="text-[#63AB45]  w-90 text-6xl">
+              All Day Order
+            </p>
             <p className="text-3xl w-80">
-              Instant homemade food order during breakfast, lunch, high tea and
-              dinne
+              Instant homemade food
+              order during breakfast,
+              lunch, high tea and dinne
             </p>
           </div>
           <div className="h-195 bg-contain  mt-30 w-full ">
-            <img className="" src="/src/assets/images/2.webp" alt="" />
+            <img
+              className=""
+              src="/src/assets/images/2.webp"
+              alt=""
+            />
           </div>
           <div className="mt-30">
-            <p className="text-[#63AB45]  w-110 text-6xl">Regional Snacks</p>
+            <p className="text-[#63AB45]  w-110 text-6xl">
+              Regional Snacks
+            </p>
             <p className="text-3xl w-80">
-              You can order a variety of your choice regional snacks such as
-              pickles, papad, sweets, any side snacks, etc.
+              You can order a variety of
+              your choice regional
+              snacks such as pickles,
+              papad, sweets, any side
+              snacks, etc.
             </p>
           </div>
         </div>
@@ -218,9 +272,13 @@ const Home = () => {
             Be the “Mealawian” Your Way!
           </p>
           <p className="font-serif">
-            You will experience an unmatched and unique online homemade food
-            ordering system that can get food delivered which is nowhere less
-            than your own homemade food
+            You will experience an
+            unmatched and unique online
+            homemade food ordering
+            system that can get food
+            delivered which is nowhere
+            less than your own homemade
+            food
           </p>
         </div>
 
@@ -237,13 +295,17 @@ const Home = () => {
             </h2>
 
             <h3 className="text-2xl font-semibold text-[#63AB45] mb-4">
-              Order your choice of homemade food right away
+              Order your choice of
+              homemade food right away
             </h3>
 
             <p className="text-gray-700 max-w-2xl mb-6">
-              You can get the best homemade food within no time. You can place
-              online food orders on the go. Also you can place advance orders of
-              food items
+              You can get the best
+              homemade food within no
+              time. You can place online
+              food orders on the go.
+              Also you can place advance
+              orders of food items
             </p>
 
             <div className="flex gap-4">
@@ -272,13 +334,17 @@ const Home = () => {
           </h2>
 
           <h3 className="text-2xl font-semibold text-[#63AB45] mb-4">
-            Order your choice of homemade food right away
+            Order your choice of
+            homemade food right away
           </h3>
 
           <p className="text-gray-700 max-w-2xl mb-6">
-            You can get the best homemade food within no time. You can place
-            online food orders on the go. Also you can place advance orders of
-            food items
+            You can get the best
+            homemade food within no
+            time. You can place online
+            food orders on the go. Also
+            you can place advance orders
+            of food items
           </p>
 
           <div className="flex gap-4">
@@ -298,15 +364,24 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <img height={500} width={550} src="/src/assets/images/25.webp" alt="" />
+        <img
+          height={500}
+          width={550}
+          src="/src/assets/images/25.webp"
+          alt=""
+        />
       </div>
 
       <section className=" h-180 w-full bg-[url('/src/assets/images/9.webp')] bg-cover">
         <div className="w-full flex flex-col items-center justify-center text-center py-8">
-          <h2 className="text-4xl font-bold mb-4">Blog</h2>
+          <h2 className="text-4xl font-bold mb-4">
+            Blog
+          </h2>
           <p className=" w-150 text-2xl mb-5">
-            Mealawian writers are too passionate about sharing our know-how on
-            food. After all, we are food experts!!
+            Mealawian writers are too
+            passionate about sharing our
+            know-how on food. After all,
+            we are food experts!!
           </p>
 
           {/* Button */}
@@ -320,7 +395,8 @@ const Home = () => {
             {blogPosts.map((e) => (
               <div
                 key={e.id}
-                className="bg-white rounded-3xl shadow-xl overflow-hidden w-70">
+                className="bg-white rounded-3xl shadow-xl overflow-hidden w-70"
+              >
                 <img
                   src={e.image}
                   alt={e.title}
@@ -328,21 +404,33 @@ const Home = () => {
                 />
 
                 <div className="p-4 text-left">
-                  <h3 className="font-semibold text-lg mb-2">{e.title}</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    {e.title}
+                  </h3>
                   <p className="text-md text-gray-500 mb-2">
-                    {e.author} | {e.date} | {e.category}
+                    {e.author} |{" "}
+                    {e.date} |{" "}
+                    {e.category}
                   </p>
-                  <p className=" ">{e.description}</p>
+                  <p className=" ">
+                    {e.description}
+                  </p>
                 </div>
               </div>
             ))}
           </div>
 
           <div className="flex justify-between w-full max-w-6xl mt-6 px-6">
-            <a href="#" className="text-[#63AB45] text-sm hover:underline">
+            <a
+              href="#"
+              className="text-[#63AB45] text-sm hover:underline"
+            >
               « Older Entries
             </a>
-            <a href="#" className="text-[#63AB45] text-sm hover:underline">
+            <a
+              href="#"
+              className="text-[#63AB45] text-sm hover:underline"
+            >
               Next Entries »
             </a>
           </div>
@@ -350,7 +438,9 @@ const Home = () => {
       </section>
 
       <footer className="bg-white w-full mt-25 h-170 text-gray-800 font-sans">
-        <p className="text-4xl text-center font-bold">As Seen In</p>
+        <p className="text-4xl text-center font-bold">
+          As Seen In
+        </p>
 
         <div className="w-full flex justify-center border-b border-gray-300 py-">
           <div className="w-[80%] h-80 mt- flex flex-wrap justify-center gap-10 items-center">
@@ -423,57 +513,92 @@ const Home = () => {
         <div className="container h-75 m-auto max-w-11/12 flex flex-wrap justify-between gap-10 py-5 px-6 ">
           <div className="w-[30%]">
             <img
-              style={{ width: "350px", height: "100px" }}
+              style={{
+                width: "350px",
+                height: "100px",
+              }}
               src="/src/assets/images/30.png"
               alt="MealAwe Logo"
               className="h-12 mb-4"
             />
             <p className=" text-gray-600  text-xl mb-4">
-              We at Mealawe bring in technology and solutions for building a
-              healthy society by delivering the best homemade food from nearby
-              home chefs.
+              We at Mealawe bring in
+              technology and solutions
+              for building a healthy
+              society by delivering the
+              best homemade food from
+              nearby home chefs.
             </p>
             <div className="flex gap-4 text-lg text-gray-700">
-              <a href="#" className="hover:text-green-600">
+              <a
+                href="#"
+                className="hover:text-green-600"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#" className="hover:text-green-600">
+              <a
+                href="#"
+                className="hover:text-green-600"
+              >
                 <FaInstagram />
               </a>
-              <a href="#" className="hover:text-green-600">
+              <a
+                href="#"
+                className="hover:text-green-600"
+              >
                 <FaYoutube />
               </a>
-              <a href="#" className="hover:text-green-600">
+              <a
+                href="#"
+                className="hover:text-green-600"
+              >
                 <FaLinkedinIn />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-xl mb-4">Company</h4>
+            <h4 className="font-semibold text-xl mb-4">
+              Company
+            </h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   About us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Why us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Join Us
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Contact Us
                 </a>
               </li>
@@ -482,25 +607,39 @@ const Home = () => {
 
           {/* Information Links */}
           <div>
-            <h4 className="font-semibold text-xl mb-4">Information</h4>
+            <h4 className="font-semibold text-xl mb-4">
+              Information
+            </h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Terms & Conditions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Cancellation & Refunds
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-green-600">
+                <a
+                  href="#"
+                  className="hover:text-green-600"
+                >
                   Blogs
                 </a>
               </li>
@@ -508,27 +647,39 @@ const Home = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold text-xl mb-4">Contact us</h4>
+            <h4 className="font-semibold text-xl mb-4">
+              Contact us
+            </h4>
             <p className="text-sm text-gray-600 flex items-center gap-2 mb-2">
-              <FaPhoneAlt className="text-green-600" /> +91-9665 888 488
+              <FaPhoneAlt className="text-green-600" />{" "}
+              +91-9665 888 488
             </p>
             <p className="text-sm text-gray-600 flex items-center gap-2">
-              <MdEmail className="text-green-600" /> help@mealawe.com
+              <MdEmail className="text-green-600" />{" "}
+              help@mealawe.com
             </p>
           </div>
         </div>
 
         <div className="border-t border-gray-300 py-4 px-6 md:px-16 flex flex-wrap justify-between items-center text-sm text-gray-500">
           <p>
-            Yagy Tech Pvt Ltd (Formerly Known as Climbing Seeds Pvt Ltd). 2025
-            All rights reserved
+            Yagy Tech Pvt Ltd (Formerly
+            Known as Climbing Seeds Pvt
+            Ltd). 2025 All rights
+            reserved
           </p>
           <div className="flex  gap-4 mt-0">
             <a href="#">
-              <img src="/src/assets/images/22.png" className="h-10" />
+              <img
+                src="/src/assets/images/22.png"
+                className="h-10"
+              />
             </a>
             <a href="#">
-              <img src="/src/assets/images/23.png" className="h-10" />
+              <img
+                src="/src/assets/images/23.png"
+                className="h-10"
+              />
             </a>
           </div>
         </div>
