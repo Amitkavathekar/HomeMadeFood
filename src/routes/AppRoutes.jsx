@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import ContactUs from "../pages/ContactUs";
-import JoinUs from "../pages/JoinUs";
+// import JoinUs from "../pages/JoinUs";
 import WhyUs from "../pages/WhyUs";
 import Blog from "../pages/Blog";
 import ProfileTest from "../pages/ProfileTest";
@@ -26,7 +26,7 @@ const AppRoutes = () => {
       />
       <Route path="/tiffinserviceinkota" element={<TiffinServiceInKota />} />
       <Route path="/forcorporates" element={<ForCorporates />} />
-      <Route path="/joinus" element={<JoinUs />} />
+      {/* <Route path="/joinus" element={<JoinUs />} /> */}
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/SignUp" element={<SignUp/>}/>
     </Routes>
