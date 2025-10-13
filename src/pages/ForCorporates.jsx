@@ -1,83 +1,92 @@
-import React from "react";
+import React from 'react';
 
 const ForCorporates = () => {
   return (
-    <div className="relative">
+    <div className='relative'>
       {/* 🟦 Top Hero Section */}
       <section className="bg-[url('/src/assets/images/Header-Image-Corporate.jpg')] h-[650px] bg-cover bg-center flex justify-center items-center bg-black/50 bg-blend-overlay">
-        <div className=" h-95 w-[70%] flex gap-70">
-          <div className="w-[50%] h-full">
-            <p className="text-[#FF7F6A] ">Corporate Meal Solutions</p>
-            <p className="font-bold text-5xl mt-5 text-white">
+        <div className='w-[90%] md:w-[80%] lg:w-[70%] flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-center'>
+          <div className='w-full lg:w-[50%] text-center lg:text-left px-4 lg:px-0'>
+            <p className='text-[#FF7F6A] text-lg md:text-xl'>
+              Corporate Meal Solutions
+            </p>
+            <p className='font-bold text-3xl md:text-4xl lg:text-5xl mt-5 text-white leading-snug'>
               You are What Your Employee Eat!
             </p>
-            <p className="text-2xl mt-10 text-white">
+            <p className='text-lg md:text-xl mt-6 md:mt-10 text-white'>
               Bulk Orders | Corporate Get Together | Celebrations | Events
             </p>
           </div>
-          <div className="w-[30%] h-full relative'">
+
+          <div className='w-[60%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-full relative flex justify-center lg:justify-start'>
             <img
               width={400}
               height={100}
-              src="/src/assets/images/Home-Cook-Good1.png"
-              alt=""
-              className="absolute mt-30 "
+              src='/src/assets/images/Home-Cook-Good1.png'
+              alt=''
+              className='mt-10 lg:mt-0 max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:absolute lg:mt-30'
             />
           </div>
         </div>
       </section>
 
-      <section className="relative h-175 w-full  flex justify-center items-center">
+      {/* 🟥 What do You Get Section */}
+      <section className='relative py-16 md:py-24 flex justify-center items-center'>
         <img
-          src="/src/assets/images/vector.svg"
-          alt="vector"
-          className="absolute top-[-140px] bg-cover left-0 w-full"
+          src='/src/assets/images/vector.svg'
+          alt='vector'
+          className='absolute top-[-80px] md:top-[-120px] left-0 w-full'
         />
-        <div className=" h-150 w-[80%] ">
-          <p className="text-4xl font-bold  text-[#E62841] text-center mt-10">
+        <div className='w-[90%] md:w-[80%] z-10'>
+          <p className='text-3xl md:text-4xl font-bold text-[#E62841] text-center mt-5 md:mt-10'>
             What do You Get?
           </p>
-          <div className="h-130 w-full  flex">
-            <div className="h-100 w-80 m-auto ">
+          <div className='flex flex-col md:flex-row flex-wrap justify-center items-center gap-10 mt-10'>
+            {/* Card 1 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Corporate-Meal-Plan.jpg"
-                alt=""
-                className="mt-5 mb-5 rounded-2xl"
+                src='/src/assets/images/cafedine/Corporate-Meal-Plan.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
               </p>
             </div>
-            <div className="h-100 w-80 m-auto ">
+
+            {/* Card 2 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Mealawe-Account-Manager.jpg"
-                alt=""
-                className="mt-5 mb-5 rounded-2xl"
+                src='/src/assets/images/cafedine/Mealawe-Account-Manager.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
               </p>
             </div>
-            <div className="h-100 w-80 m-auto ">
+
+            {/* Card 3 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Regional-food-India-300x242.jpg"
-                alt=""
-                className=" mb-5 mt-[-40] rounded-2xl"
+                src='/src/assets/images/cafedine/Regional-food-India-300x242.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
@@ -86,57 +95,64 @@ const ForCorporates = () => {
           </div>
         </div>
       </section>
-      <section className="relative h-175 w-full  flex justify-center items-center">
+
+      {/* 🟩 What does Your Employee Get Section */}
+      <section className='relative py-16 md:py-24 flex justify-center items-center'>
         <img
-          src="/src/assets/images/vector.svg"
-          alt="vector"
-          className="absolute top-[-140px] bg-cover left-0 w-full"
+          src='/src/assets/images/vector.svg'
+          alt='vector'
+          className='absolute top-[-80px] md:top-[-120px] left-0 w-full'
         />
-        <div className=" h-150 w-[80%] ">
-          <p className="text-4xl font-bold  text-[#60C8BC] text-center mt-10">
+        <div className='w-[90%] md:w-[80%] z-10'>
+          <p className='text-3xl md:text-4xl font-bold text-[#60C8BC] text-center mt-5 md:mt-10'>
             What does Your Employee Get?
           </p>
-          <div className="h-130 w-full  flex">
-            <div className="h-100 w-80 m-auto ">
+          <div className='flex flex-col md:flex-row flex-wrap justify-center items-center gap-10 mt-10'>
+            {/* Card 1 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Corporate-Meal-Plan.jpg"
-                alt=""
-                className="mt-5 mb-5 rounded-2xl"
+                src='/src/assets/images/cafedine/Corporate-Meal-Plan.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
               </p>
             </div>
-            <div className="h-100 w-80 m-auto ">
+
+            {/* Card 2 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Mealawe-Account-Manager.jpg"
-                alt=""
-                className="mt-5 mb-5 rounded-2xl"
+                src='/src/assets/images/cafedine/Mealawe-Account-Manager.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
               </p>
             </div>
-            <div className="h-100 w-80 m-auto ">
+
+            {/* Card 3 */}
+            <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src="/src/assets/images/cafedine/Regional-food-India-300x242.jpg"
-                alt=""
-                className=" mb-5 mt-[-40] rounded-2xl"
+                src='/src/assets/images/cafedine/Regional-food-India-300x242.jpg'
+                alt=''
+                className='mt-5 mb-5 rounded-2xl mx-auto'
               />
-              <p className="text-2xl font-medium  text-[#E62841] mb-2">
+              <p className='text-xl md:text-2xl font-medium text-[#E62841] mb-2'>
                 Complete Meal Solutions
               </p>
-              <p className="text-md font-medium text-gray-700">
+              <p className='text-sm md:text-md font-medium text-gray-700 px-2 md:px-0'>
                 We have every type of meal solution for all kinds of corporate
                 occasion. Be it one-time or recurring orders, we are there for
                 you. We can serve 1-1000 people at a time.
@@ -145,9 +161,9 @@ const ForCorporates = () => {
           </div>
         </div>
       </section>
-      <section className="h-180 w-full bg-green-500 bg-">
-          
-      </section>
+
+      {/* 🟩 Placeholder Section */}
+      <section className='h-[300px] md:h-[400px] w-full bg-green-500'></section>
     </div>
   );
 };

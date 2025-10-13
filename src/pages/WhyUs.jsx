@@ -4,146 +4,143 @@ const WhyUs = () => {
   return (
     <div>
       {/* hero */}
-      <section className="h-180  w-full bg-cover bg-no-repeat bg-[url('/src/assets/images/26.jpg')] bg-black/50 bg-blend-overlay">
-        <div className='w-[70%]  h-[75%] m-auto flex '>
+      <section className="min-h-[40rem] w-full bg-cover bg-no-repeat bg-[url('/src/assets/images/26.jpg')] bg-black/50 bg-blend-overlay">
+        <div className="w-[90%] lg:w-[70%] h-[75%] m-auto flex flex-col lg:flex-row items-center justify-center gap-6 py-10">
           {/* Left box */}
-          <div className='h-full w-full  flex flex-col items-center justify-center'>
-            <p className='text-white text-2xl font-bold'>Why Us?</p>
-            <p className='text-5xl font-bold text-white'>
+          <div className="h-full w-full flex flex-col items-center justify-center text-center lg:text-left px-4">
+            <p className="text-white text-2xl md:text-3xl font-bold">Why Us?</p>
+            <p className="text-3xl md:text-5xl font-bold text-white mt-2">
               Because you are very special!
             </p>
-            <p className='text-white text-xl'>
-              You will have every reason to count on us for healthy & tasty home
-              food. You will find a different concept & flavour while ordering
-              home food from Mealawe.
+            <p className="text-white text-base md:text-xl mt-4 leading-relaxed">
+              You will have every reason to count on us for healthy & tasty home food.
+              You will find a different concept & flavour while ordering home food from Mealawe.
             </p>
           </div>
 
           {/* Right box */}
-
-          <div className='h-140  bg-no-repeat w-5/6  '>
+          <div className="h-auto w-full lg:w-5/6 flex justify-center lg:justify-end">
             <img
-              className='mt-15  ml-20'
-              src='/src/assets/images/27.png'
-              alt=''
+              className="w-[80%] sm:w-[60%] lg:w-[70%] xl:w-[60%] mt-6 lg:mt-0"
+              src="/src/assets/images/27.png"
+              alt=""
             />
           </div>
         </div>
 
         {/* bottom background image */}
-        <div className="mt- h-50 w-full bg-[url('/src/assets/images/28.svg')] bg-no-repeat bg-contain"></div>
+        <div className="h-40 md:h-50 w-full bg-[url('/src/assets/images/28.svg')] bg-no-repeat bg-contain bg-center"></div>
       </section>
 
-      <section className='w-full  h-600'>
-        <div className=' mt-15 m-auto w-[70%]  '>
-          <div className='h-150 flex items-center justify-between w-full '>
+      {/* Main content */}
+      <section className="w-full min-h-screen">
+        <div className="mt-10 m-auto w-[90%] lg:w-[70%] space-y-20">
+          {/* Section #1 */}
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
             <img
-              className='bg-contain h-120'
-              src='/src/assets/images/31.png'
-              alt=''
+              className="h-60 sm:h-80 md:h-96 bg-contain"
+              src="/src/assets/images/31.png"
+              alt=""
             />
-            <div className="h-110 mt-5 bg-contain flex items-center justify-center bg-no-repeat w-[50%] bg-[url('/src/assets/images/35.png')]">
-              <div className='h-[75%] w-[80%]'>
-                <p className='text-5xl font-bold text-[#6ACBC0]'>#1</p>
-                <p className='text-4xl font-bold text-[#E62841]'>
+            <div className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] bg-[url('/src/assets/images/35.png')] p-6 sm:p-10">
+              <div className="w-full md:w-[80%] text-center lg:text-left">
+                <p className="text-4xl md:text-5xl font-bold text-[#6ACBC0]">#1</p>
+                <p className="text-2xl md:text-4xl font-bold text-[#E62841] mt-2">
                   Say “NO” to unhealthy outside food
                 </p>
-                <p className='mt-5 text-xl '>
-                  Our neighbourhood kitchens are going to serve what they are
-                  going to serve their family.
+                <p className="mt-4 text-base md:text-xl">
+                  Our neighbourhood kitchens are going to serve what they serve their family.
                 </p>
-                <p className='mt-5 text-xl '>
-                  So, you can rest assured that you are going to get healthy
-                  home food that has soul in it. Also, our home kitchens are
-                  100% FSSAI certified.
+                <p className="mt-3 text-base md:text-xl">
+                  So, you can rest assured you’re getting healthy home food with soul. All kitchens are FSSAI certified.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className='h-150 flex items-center justify-between w-full '>
-            <div className="h-110 mt-5 bg-contain flex items-center justify-center bg-no-repeat w-[50%] bg-[url('/src/assets/images/35.png')]">
-              <div className='h-[75%] w-[80%]'>
-                <p className='text-5xl font-bold text-[#6ACBC0]'>#2</p>
-                <p className='text-4xl font-bold text-[#E62841]'>
+          {/* Section #2 */}
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+            <div className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] bg-[url('/src/assets/images/35.png')] p-6 sm:p-10">
+              <div className="w-full md:w-[80%] text-center lg:text-left">
+                <p className="text-4xl md:text-5xl font-bold text-[#6ACBC0]">#2</p>
+                <p className="text-2xl md:text-4xl font-bold text-[#E62841] mt-2">
                   Get the authentic taste of your regional food
                 </p>
-                <p className='mt-5 text-xl '>
-                  Now no geographical boundary can keep you away from your own
-                  regional cuisine.
+                <p className="mt-4 text-base md:text-xl">
+                  No geographical boundary can keep you from your own regional cuisine.
                 </p>
-                <p className='mt-5 text-xl '>
-                  You can look for your choice of authentic regional home
-                  kitchen and place online orders right away.
+                <p className="mt-3 text-base md:text-xl">
+                  Find authentic regional home kitchens and order online instantly.
                 </p>
               </div>
             </div>
             <img
-              className='bg-contain h-110'
-              src='/src/assets/images/32.png'
-              alt=''
+              className="h-60 sm:h-80 md:h-96 bg-contain"
+              src="/src/assets/images/32.png"
+              alt=""
             />
           </div>
-          <div className='h-150 flex items-center justify-between w-full '>
+
+          {/* Section #3 */}
+          <div className="flex flex-col lg:flex-row items-center justify-between w-full gap-10">
             <img
-              className='bg-contain h-120'
-              src='/src/assets/images/33.png'
-              alt=''
+              className="h-60 sm:h-80 md:h-96 bg-contain"
+              src="/src/assets/images/33.png"
+              alt=""
             />
-            <div className="h-110 mt-5 bg-contain flex items-center justify-center bg-no-repeat w-[50%] bg-[url('/src/assets/images/35.png')]">
-              <div className='h-[75%] w-[80%]'>
-                <p className='text-5xl font-bold text-[#6ACBC0]'>#3</p>
-                <p className='text-4xl font-bold text-[#E62841]'>
+            <div className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] bg-[url('/src/assets/images/35.png')] p-6 sm:p-10">
+              <div className="w-full md:w-[80%] text-center lg:text-left">
+                <p className="text-4xl md:text-5xl font-bold text-[#6ACBC0]">#3</p>
+                <p className="text-2xl md:text-4xl font-bold text-[#E62841] mt-2">
                   Online home food delivery within minutes
                 </p>
-                <p className='mt-5 text-xl '>
-                  Yes, we will get you homemade food deliveries within minutes.{' '}
+                <p className="mt-4 text-base md:text-xl">
+                  Yes, we’ll deliver homemade food within minutes.
                 </p>
-                <p className='mt-5 text-xl '>
-                  We have a network of trusted delivery partners who can do
-                  daily as well as advance food order deliveries.
+                <p className="mt-3 text-base md:text-xl">
+                  Our trusted delivery partners handle both daily and advance orders.
                 </p>
               </div>
             </div>
           </div>
-          <div className='h-150 flex items-center justify-between w-full '>
-            <div className="h-110 mt-5 bg-contain flex items-center justify-center bg-no-repeat w-[50%] bg-[url('/src/assets/images/35.png')]">
-              <div className='h-[75%] w-[80%]'>
-                <p className='text-5xl font-bold text-[#6ACBC0]'>#4</p>
-                <p className='text-4xl font-bold text-[#E62841]'>
+
+          {/* Section #4 */}
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10">
+            <div className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] bg-[url('/src/assets/images/35.png')] p-6 sm:p-10">
+              <div className="w-full md:w-[80%] text-center lg:text-left">
+                <p className="text-4xl md:text-5xl font-bold text-[#6ACBC0]">#4</p>
+                <p className="text-2xl md:text-4xl font-bold text-[#E62841] mt-2">
                   Creating entrepreneurs in every home
                 </p>
-                <p className='mt-5 text-xl '>
-                  Home chefs have been cooking all their life for their families
-                  without asking anything in return.
+                <p className="mt-4 text-base md:text-xl">
+                  Home chefs have cooked for families all their life without returns.
                 </p>
-                <p className='mt-5 text-xl '>
-                  Now the time has come to reward them with a sustainable
-                  business from the comfort of their home.
+                <p className="mt-3 text-base md:text-xl">
+                  Now it’s time to reward them with sustainable business from home.
                 </p>
               </div>
             </div>
             <img
-              className='bg-contain h-100'
-              src='/src/assets/images/34.png'
-              alt=''
+              className="h-60 sm:h-80 md:h-96 bg-contain"
+              src="/src/assets/images/34.png"
+              alt=""
             />
           </div>
         </div>
       </section>
 
-      <section className="relative h-200 w-full bg-cover bg-[url('/src/assets/images/36.jpg')] bg-black/50 bg-blend-overlay">
+      {/* Footer Section */}
+      <section className="relative min-h-[20rem] w-full bg-cover bg-[url('/src/assets/images/36.jpg')] bg-black/50 bg-blend-overlay mt-20">
         <img
-          className='z-0 h-50 w-full absolute top-0 left-0'
-          src='/src/assets/images/38.svg'
-          alt=''
+          className="z-0 h-32 md:h-50 w-full absolute top-0 left-0"
+          src="/src/assets/images/38.svg"
+          alt=""
         />
-
-        <div className='absolute inset-0 border flex-col flex items-center justify-center'>
-          <p className='text-5xl  text-white font-bold'>
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <p className="text-3xl md:text-5xl text-white font-bold">
             Check out What’s Cooking?
           </p>
-          <p>this is my prj</p>
+          <p className="text-white mt-3 text-base md:text-lg">this is my prj</p>
         </div>
       </section>
     </div>
