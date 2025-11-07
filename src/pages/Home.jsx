@@ -143,7 +143,7 @@ const Home = () => {
       </section>
 
       {/* Advance Orders */}
-      <section className='flex flex-col lg:flex-row justify-between items-center w-full px-4 lg:px-12 py-10 gap-10'>
+      <section className='flex flex-col lg:flex-row justify-between items-center w-full  py-10 gap-10'>
         <div className='w-full lg:w-[45%] flex flex-col items-center'>
           <img
             src='/src/assets/images/imgi_6_ui-elements-01 (1).webp'
@@ -154,7 +154,7 @@ const Home = () => {
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               Advance Order
             </p>
-            <p className='text-lg sm:text-2xl mt-2'>
+            <p className='text-lg lg:w-90  sm:text-2xl mt-2'>
               You can order your choice of homemade food in advance for up to 2
               days. Now you can plan for a perfect weekend.
             </p>
@@ -167,7 +167,7 @@ const Home = () => {
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               All Day Order
             </p>
-            <p className='text-lg sm:text-2xl mt-2'>
+            <p className='text-lg lg:w-90 sm:text-2xl mt-2'>
               Instant homemade food order during breakfast, lunch, high tea and
               dinner.
             </p>
@@ -177,7 +177,7 @@ const Home = () => {
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               Regional Snacks
             </p>
-            <p className='text-lg sm:text-2xl mt-2'>
+            <p className='text-lg lg:w-90 sm:text-2xl mt-2'>
               You can order a variety of your choice regional snacks such as
               pickles, papad, sweets, any side snacks, etc.
             </p>
@@ -191,7 +191,7 @@ const Home = () => {
       </p>
 
       <section className='mt-10 w-full'>
-        <div className='w-[95%] mx-auto flex flex-col lg:flex-row flex-wrap justify-center gap-10'>
+        <div className='w-[100%] mx-auto flex flex-col lg:flex-row flex-wrap justify-center gap-10'>
           <StepsCompoent
             heading='Download Mealawe App'
             label='Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.'
@@ -216,7 +216,7 @@ const Home = () => {
       </section>
 
       {/* Join Section */}
-      <div className='flex flex-col lg:flex-row items-center justify-center gap-10 mt-20 px-4'>
+      <div className='flex flex-col lg:flex-row items-center justify-center gap-10 mt-30 px-4'>
         <img
           src='/src/assets/images/8.webp'
           alt=''
@@ -284,11 +284,12 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <footer className='bg-white mt-20 text-gray-800 font-sans px-4 lg:px-16'>
-        <p className='text-2xl sm:text-3xl text-center font-bold mb-6'>
+      <footer className='bg-white mt-10 text-gray-800 font-sans px-4 lg:px-16'>
+        <p className='lg:text-4xl sm:text-3xl mb-20 text-center font-bold mb-6l'>
           As Seen In
         </p>
-        <div className='flex flex-wrap justify-center items-center gap-6 border-b border-gray-300 pb-6'>
+
+        <div className='flex flex-wrap  justify-center items-center gap-16 border-b border-gray-300 pb-6'>
           {[
             '14.png',
             '15.webp',
@@ -297,18 +298,24 @@ const Home = () => {
             '18.png',
             '19.png',
             '20.png',
-            '19.png',
           ].map((img, i) => (
             <img
               key={i}
               src={`/src/assets/images/${img}`}
               alt='Logo'
-              className='w-24 sm:w-32 h-auto object-contain'
+              className='
+              w-24 lg:w-50 sm:w-32 h-auto object-contain
+              filter grayscale
+              hover:grayscale-0
+              transition duration-300 ease-in-out
+            '
             />
           ))}
         </div>
 
+        {/* ---------- Footer Sections ---------- */}
         <div className='flex flex-col md:flex-row justify-between gap-10 py-10'>
+          {/* Left - About */}
           <div className='md:w-[30%] text-center md:text-left'>
             <img
               src='/src/assets/images/30.png'
@@ -321,20 +328,21 @@ const Home = () => {
               home chefs.
             </p>
             <div className='flex justify-center md:justify-start gap-4 text-xl'>
-              <FaFacebookF className='hover:text-green-600' />
-              <FaInstagram className='hover:text-green-600' />
-              <FaYoutube className='hover:text-green-600' />
-              <FaLinkedinIn className='hover:text-green-600' />
+              <FaFacebookF className='hover:text-green-600 cursor-pointer transition' />
+              <FaInstagram className='hover:text-green-600 cursor-pointer transition' />
+              <FaYoutube className='hover:text-green-600 cursor-pointer transition' />
+              <FaLinkedinIn className='hover:text-green-600 cursor-pointer transition' />
             </div>
           </div>
 
+          {/* Company */}
           <div className='text-center md:text-left'>
             <h4 className='font-semibold text-lg mb-4'>Company</h4>
             <ul className='space-y-2 text-sm text-gray-600'>
               {['About us', 'Why us', 'Join Us', 'Careers', 'Contact Us'].map(
                 (item) => (
                   <li key={item}>
-                    <a href='#' className='hover:text-green-600'>
+                    <a href='#' className='hover:text-green-600 transition'>
                       {item}
                     </a>
                   </li>
@@ -343,6 +351,7 @@ const Home = () => {
             </ul>
           </div>
 
+          {/* Information */}
           <div className='text-center md:text-left'>
             <h4 className='font-semibold text-lg mb-4'>Information</h4>
             <ul className='space-y-2 text-sm text-gray-600'>
@@ -353,7 +362,7 @@ const Home = () => {
                 'Blogs',
               ].map((item) => (
                 <li key={item}>
-                  <a href='#' className='hover:text-green-600'>
+                  <a href='#' className='hover:text-green-600 transition'>
                     {item}
                   </a>
                 </li>
@@ -361,6 +370,7 @@ const Home = () => {
             </ul>
           </div>
 
+          {/* Contact */}
           <div className='text-center md:text-left'>
             <h4 className='font-semibold text-lg mb-4'>Contact Us</h4>
             <p className='text-sm text-gray-600 flex items-center justify-center md:justify-start gap-2 mb-2'>
@@ -372,6 +382,7 @@ const Home = () => {
           </div>
         </div>
 
+        {/* ---------- Footer Bottom ---------- */}
         <div className='border-t border-gray-300 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500'>
           <p>
             Yagy Tech Pvt Ltd (Formerly Known as Climbing Seeds Pvt Ltd). 2025
