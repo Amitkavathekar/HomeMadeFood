@@ -5,7 +5,7 @@ const ForCorporates = () => {
     <div className='relative'>
       {/* 🟦 Top Hero Section */}
       <section className="bg-[url('/src/assets/images/Header-Image-Corporate.jpg')] h-[650px] bg-cover bg-center flex justify-center items-center bg-black/50 bg-blend-overlay">
-        <div className='w-[90%] md:w-[80%] lg:w-[70%] flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-center'>
+        <div className='w-[90%] md:w-[80%] lg:w-[70%] flex flex-col lg:flex-row gap-5  lg:gap-20 items-center justify-center'>
           <div className='w-full lg:w-[50%] text-center lg:text-left px-4 lg:px-0'>
             <p className='text-[#FF7F6A] text-lg md:text-xl'>
               Corporate Meal Solutions
@@ -18,13 +18,11 @@ const ForCorporates = () => {
             </p>
           </div>
 
-          <div className='w-[60%] sm:w-[50%] md:w-[40%] lg:w-[30%] h-full relative flex justify-center lg:justify-start'>
+          <div className='w-[60%] sm:w-[50%]  md:w-[40%] lg:w-[30%] h-full relative flex justify-center lg:justify-start'>
             <img
-              width={400}
-              height={100}
               src='/src/assets/images/Home-Cook-Good1.png'
               alt=''
-              className='mt-10 lg:mt-0 max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:absolute lg:mt-30'
+              className=' mt-40 md:mt-20 lg:-mt-8 max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:absolute'
             />
           </div>
         </div>
