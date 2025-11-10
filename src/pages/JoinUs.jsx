@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import thali1 from '/src/assets/images/thali1.jpg';
 import Button from './../components/Button';
 import { Link } from 'react-router-dom';
+import Cardhome from './../components/Cardhome';
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({
@@ -55,7 +56,7 @@ const JoinUs = () => {
           }}
         >
           {/* Text + Form + Video */}
-          <div className='text-4xl w-[75%] font-bold  -mt-30 text-white p-4 relative z-10'>
+          <div className='text-4xl w-[75%] font-bold -mt-30 text-white p-4 relative z-10'>
             Register as a Home-Chef Today{' '}
             <span className='text-[#60C5B9]'>FREE*! </span>
             {/* Form + Video Section */}
@@ -137,16 +138,14 @@ const JoinUs = () => {
           <div className="absolute bottom-0 left-0 w-full h-40 bg-[url('/src/assets/images/28.svg')] bg-no-repeat bg-contain bg-bottom"></div>
         </div>
       </section>
-      <section className='h-screen w-full bg-white'>
-        <div className=' flex justify-center items-center  h-screen w-full'>
-          <div className='w-[70%] h-[85%]  rounded-2xl  gap-10 flex'>
-            <div className='h-full w-[50%] rounded-2xl  shadow-2xl shadow-gray-500/30'>
-              <div className='p-5 '>
-                <img
-                  className=''
-                  src='/src/assets/images/Artboard-106.png'
-                ></img>
-                <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-45 uppercase mt-5'>
+
+      <section className='w-full  bg-white'>
+        <div className='flex justify-center items-center h-screen w-full'>
+          <div className='w-[70%] h-[85%] rounded-2xl gap-10 flex flex-wrap md:flex-nowrap'>
+            <div className='h-full w-full md:w-[50%] rounded-2xl shadow-2xl shadow-gray-500/30'>
+              <div className='p-5'>
+                <img src='/src/assets/images/Artboard-106.png' alt='' />
+                <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-fit uppercase mt-5'>
                   Join as a home chef
                 </p>
                 <p className='text-3xl text-[#E62841] font-bold'>
@@ -171,13 +170,11 @@ const JoinUs = () => {
                 </div>
               </div>
             </div>
-            <div className='h-full w-[50%] rounded-2xl  shadow-2xl shadow-gray-500/30'>
-              <div className='p-5 '>
-                <img
-                  className=''
-                  src='/src/assets/images/Artboard-107.png'
-                ></img>
-                <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-45 uppercase mt-5'>
+
+            <div className='h-full w-full md:w-[50%] rounded-2xl shadow-2xl shadow-gray-500/30'>
+              <div className='p-5'>
+                <img src='/src/assets/images/Artboard-107.png' alt='' />
+                <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-fit uppercase mt-5'>
                   Join as a customer
                 </p>
                 <p className='text-3xl text-[#E62841] font-bold'>
@@ -204,34 +201,32 @@ const JoinUs = () => {
             </div>
           </div>
         </div>
-        <div>
-          <img
-            className='w-screen mt-0 '
-            src='/src/assets/images/reversevector.svg'
-          ></img>
-        </div>
       </section>
 
-      <section className='h-auto'>
-        <div
-          className="h-screen pt-40  w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')]
-              bg-center bg-no-repeat bg-[length:100%_100%]  bg-black/60 bg-blend-overlay"
-        >
-          <div className=' bg-fixed h-screen w-[70%] m-auto'>
-            <p className=' text-5xl text-[#ffff] font-bold text-center'>
+      <section className='h-auto relative'>
+        <img
+          className=' absolute w-screen mt-0 top-[0px]'
+          src='/src/assets/images/reversevector.svg'
+          alt=''
+        />
+
+        <div className="h-screen pt-40 w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')] bg-center bg-no-repeat bg-[length:100%_100%] bg-black/60 bg-blend-overlay">
+          <div className='bg-fixed h-screen w-[70%] m-auto relative'>
+            <p className='text-5xl text-white font-bold text-center'>
               Why Become Home Chef With Us?
             </p>
 
-            <div className=' mt-5 h-75 flex justify-center gap-20'>
+            <div className='mt-5 flex justify-center gap-20 flex-wrap'>
               <img
                 style={{ height: '300px' }}
                 src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-              ></img>
-              <div className='w-[50%] mt-10'>
+                alt=''
+              />
+              <div className='w-full md:w-[50%] mt-10'>
                 <p className='font-bold text-2xl text-[#FFC947]'>
                   You are more than a homemaker
                 </p>
-                <p className=' font-bold text-xl mt-2 text-[#ffff]'>
+                <p className='font-bold text-xl mt-2 text-white'>
                   Time has come to reward you for your cooking skills which has
                   till date made your family happy. Once you join Mealawe as
                   home chef, you only have to serve a small amount of food that
@@ -240,35 +235,17 @@ const JoinUs = () => {
               </div>
             </div>
 
-            <div className='h-75 flex flex-row-reverse justify-center  gap-20'>
+            <div className='flex flex-row-reverse justify-center gap-20 flex-wrap mt-10'>
               <img
                 style={{ height: '300px' }}
                 src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-              ></img>
-              <div className='w-[50%] flex '>
-                <div className='items-center justify-center'>
-                  <p className='font-bold text-2xl text-[#FFC947]  mt-20'>
-                    You are more than a homemaker
-                  </p>
-                  <p className=' font-bold text-xl mt-2 text-[#ffff]'>
-                    Time has come to reward you for your cooking skills which
-                    has till date made your family happy. Once you join Mealawe
-                    as home chef, you only have to serve a small amount of food
-                    that you are cooking on a daily basis.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className='  h-75 flex justify-center gap-20'>
-              <img
-                style={{ height: '300px' }}
-                src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-              ></img>
-              <div className='w-[50%] mt-10'>
+                alt=''
+              />
+              <div className='w-full md:w-[50%]'>
                 <p className='font-bold text-2xl text-[#FFC947] mt-10'>
                   You are more than a homemaker
                 </p>
-                <p className=' font-bold text-xl mt-2 text-[#ffff]'>
+                <p className='font-bold text-xl mt-2 text-white'>
                   Time has come to reward you for your cooking skills which has
                   till date made your family happy. Once you join Mealawe as
                   home chef, you only have to serve a small amount of food that
@@ -277,32 +254,42 @@ const JoinUs = () => {
               </div>
             </div>
 
-            <div className=' h-75 flex flex-row-reverse justify-center  gap-20'>
+            <div className='flex justify-center gap-20 flex-wrap mt-10'>
               <img
                 style={{ height: '300px' }}
                 src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-              ></img>
-              <div className='w-[50%] flex '>
-                <div className='items-center justify-center '>
-                  <p className='font-bold text-2xl text-[#FFC947]  mt-20'>
-                    You are more than a homemaker
-                  </p>
-                  <p className=' font-bold text-xl mt-2 text-[#ffff]'>
-                    Time has come to reward you for your cooking skills which
-                    has till date made your family happy. Once you join Mealawe
-                    as home chef, you only have to serve a small amount of food
-                    that you are cooking on a daily basis.
-                  </p>
-                </div>
+                alt=''
+              />
+              <div className='w-full md:w-[50%] mt-10'>
+                <p className='font-bold text-2xl text-[#FFC947] mt-10'>
+                  You are more than a homemaker
+                </p>
+                <p className='font-bold text-xl mt-2 text-white'>
+                  Time has come to reward you for your cooking skills which has
+                  till date made your family happy. Once you join Mealawe as
+                  home chef, you only have to serve a small amount of food that
+                  you are cooking on a daily basis.
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <div
-          className="h-screen w-full  bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')]
-              bg-center bg-no-repeat bg-[length:100%_105%] bg-black/60 bg-blend-overlay"
-        ></div>
-        <img src='/src/assets/images/'></img>
+
+        <img
+          src='/src/assets/images/vector.svg'
+          className='z-0 h-32 md:h-50 w-full absolute top-305 left-0'
+          alt=''
+        />
+
+        <div className="h-screen w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')] bg-center bg-no-repeat bg-[length:100%_105%] bg-black/60 bg-blend-overlay"></div>
+      </section>
+
+      <section className='lg:w-full lg:h-170'>
+        <div className='lg:w-[70%]  border m-auto lg:h-full'>
+          <div className='lg:w-full lg:h:20 border'>
+            <p>How It Works?</p>
+          </div>
+        </div>
       </section>
     </>
   );

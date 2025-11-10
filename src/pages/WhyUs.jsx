@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 
 const WhyUs = () => {
   return (
@@ -144,19 +145,17 @@ const WhyUs = () => {
           </div>
         </div>
       </section>
-
-      {/* Footer Section */}
-      <section className="relative h-470 md:h-600 lg:h-215   w-full bg-cover bg-[url('/src/assets/images/36.jpg')] bg-black/50 bg-blend-overlay mt-20">
+      <section className="relative h-470 md:h-600 lg:h-250   w-full bg-cover bg-[url('/src/assets/images/36.jpg')] bg-black/50 bg-blend-overlay mt-20">
         <img
           className='z-0 h-32 md:h-50 w-full absolute top-0 left-0'
           src='/src/assets/images/38.svg'
           alt=''
         />
         <div className='absolute top-25 md:top-35 lg:top-40 flex flex-col items-center justify-center text-center px-4'>
-          <p className='text-3xl mt-5 md:text-5xl  text-white font-bold'>
+          <p className='text-3xl mt-10 md:text-5xl  text-white font-bold'>
             Check out What’s Cooking?
           </p>
-          <div className=' flex flex-wrap  mt-10 gap-6 lg:gap-10 border w-[90%] h-auto  lg:flex lg:flex-wrap  items-center justify-center '>
+          <div className=' flex flex-wrap  mt-10 gap-6 lg:gap-10  w-[90%] h-auto  lg:flex lg:flex-wrap  items-center justify-center '>
             <img
               className='lg:w-70 xl:w-80'
               src='/src/assets/images/imgi_8_punjabi.png'
@@ -171,33 +170,75 @@ const WhyUs = () => {
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/cafedine/imgi_5_kashmiri.png'
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/cafedine/imgi_8_maharashtrian.png'
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/cafedine/imgi_11_bihari.png'
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/cafedine/imgi_6_north0eastern.png'
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/imgi_9_bengali.png'
             ></img>
             <img
               className='lg:w-70 xl:w-80'
-              src='/src/assets/images/imgi_8_punjabi.png'
+              src='/src/assets/images/imgi_12_rajasthani.png'
+            ></img>
+          </div>
+          <img
+            src='/src/assets/images/vector.svg'
+            className='z-0   h-32 mt-170  md:h-50 w-full absolute top-0 left-0'
+          ></img>
+        </div>
+      </section>
+
+      <section className='border lg:h-175 w-full flex justify-center items-center'>
+        <div className=' lg:h-160 flex justify-between lg:w-[70%]'>
+          <div className='lg:w-full flex items-center'>
+            <div>
+              <p className='text-4xl font-bold mt-10'>
+                Get your homemade meal delivered today
+              </p>
+              <p className='text-2xl font-bold mt-5 text-gray-500'>
+                Download for free!
+              </p>
+              <div className='flex gap-10 mt-5'>
+                <img
+                  src='/src/assets/images/cafedine/qr.png'
+                  className='w-[150px] h-[150px] '
+                ></img>
+                <div className='flex flex-col justify-around'>
+                  <img
+                    src='/src/assets/images/22.png'
+                    className='w-[160px] h-[55px]'
+                  ></img>
+                  <img
+                    src='/src/assets/images/23.png'
+                    className='w-[160px] h-[55px] '
+                  ></img>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='flex items-center w-full'>
+            <img
+              src='/src/assets/images/home-chef-updated-graphic-610x659.png'
+              className='w-[450px] h-[500px] '
             ></img>
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
-
+``;
 export default WhyUs;
