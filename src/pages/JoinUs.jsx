@@ -148,10 +148,11 @@ const JoinUs = () => {
           </div>
 
           {/* ===== Decorative SVG at Bottom ===== */}
-          <div
-            className='absolute bottom-0 left-0 w-full h-40 bg-no-repeat bg-contain bg-bottom'
-            style={{ backgroundImage: `url(${svg28})` }}
-          ></div>
+          <img
+            src={vector}
+            className='  h-32 mt-70 md:h-50 w-full absolute top-60 left-0'
+            alt=''
+          />
         </div>
       </section>
 

@@ -36,7 +36,7 @@ const WhyUs = () => {
     <div>
       {/* hero */}
       <section
-        className='min-h-[40rem] w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay'
+        className='min-h-[40rem] relative w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay'
         style={{ backgroundImage: `url(${img26})` }}
       >
         <div className='w-[90%] lg:w-[70%] h-[75%] m-auto flex flex-col lg:flex-row items-center justify-center gap-6 py-10'>
@@ -62,12 +62,11 @@ const WhyUs = () => {
             />
           </div>
         </div>
-
-        {/* bottom background image */}
-        <div
-          className='h-40 z-10 md:h-52 w-full bg-no-repeat bg-contain bg-center'
-          style={{ backgroundImage: `url(${vector})` }}
-        ></div>
+        <img
+          src={vector}
+          className='  h-32 mt-56 md:h-50 w-full absolute top-55 left-0'
+          alt=''
+        />
       </section>
 
       {/* Main content */}
