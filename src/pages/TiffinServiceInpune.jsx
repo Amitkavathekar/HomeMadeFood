@@ -1,6 +1,14 @@
-import Button from '../components/Button';
-import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Button from '../components/Button';
+
+// ✅ Importing all images properly so they load on Vercel
+import shaniwarwada from '../assets/images/shaniwarwada.webp';
+import deluxeMealPlan from '../assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png';
+import ecoFriendly from '../assets/images/eco-friendly-package.png';
+import scooter from '../assets/images/scooter.png';
+import setting from '../assets/images/setting.png';
+import repeat from '../assets/images/repeat.png';
 
 const TiffinServiceInpune = () => {
   const [count, setcount] = useState(0);
@@ -46,7 +54,7 @@ const TiffinServiceInpune = () => {
           </div>
 
           <img
-            src='/src/assets/images/shaniwarwada.webp'
+            src={shaniwarwada}
             alt='Shaniwarwada'
             className='w-[90%] sm:w-[70%] md:w-[50%] lg:w-[40%] rounded-xl'
           />
@@ -127,7 +135,7 @@ const TiffinServiceInpune = () => {
         <div className='w-full lg:w-[45%] flex justify-center items-center mt-10 lg:mt-0'>
           <img
             className='w-[80%] sm:w-[70%] md:w-[60%] lg:w-[90%] h-auto rounded-xl'
-            src='/src/assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png'
+            src={deluxeMealPlan}
             alt='Deluxe Meal Plan'
           />
         </div>
@@ -151,22 +159,22 @@ const TiffinServiceInpune = () => {
             <div className='flex flex-wrap justify-evenly gap-5'>
               {[
                 {
-                  img: '/src/assets/images/eco-friendly-package.png',
+                  img: ecoFriendly,
                   title: 'Eco-Friendly Packaging',
                   desc: 'Sustainable and biodegradable materials',
                 },
                 {
-                  img: '/src/assets/images/scooter.png',
+                  img: scooter,
                   title: 'Electric Delivery',
                   desc: 'Reducing carbon footprint with delivery',
                 },
                 {
-                  img: '/src/assets/images/setting.png',
+                  img: setting,
                   title: 'Customization Options',
                   desc: 'Tailored meal plans to suit preferences',
                 },
                 {
-                  img: '/src/assets/images/repeat.png',
+                  img: repeat,
                   title: 'No Vegetable Repeats',
                   desc: 'Diversed menu with no repeats in a week',
                 },
@@ -204,7 +212,7 @@ const TiffinServiceInpune = () => {
               >
                 <div className='h-[80px] flex justify-center items-center'>
                   <img
-                    src='/src/assets/images/eco-friendly-package.png'
+                    src={ecoFriendly}
                     alt='Eco Package'
                     className='max-h-full'
                   />
