@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
-import thali1 from '/src/assets/images/thali1.jpg';
-import Button from './../components/Button';
 import { Link } from 'react-router-dom';
+import Button from './../components/Button';
 import Cardhome from './../components/Cardhome';
 import JoinusCard from '../components/JoinusCard';
+
+// ===== Imported Images =====
+import thali1 from '../assets/images/thali1.jpg';
+import svg28 from '../assets/images/28.svg';
+import artboard106 from '../assets/images/Artboard-106.png';
+import artboard107 from '../assets/images/Artboard-107.png';
+import app22 from '../assets/images/22.png';
+import app23 from '../assets/images/23.png';
+import reversevector from '../assets/images/reversevector.svg';
+import vector from '../assets/images/vector.svg';
+import joinBg1 from '../assets/images/cafedine/Join-Us-bg2-1.jpg';
+import joinGraphic from '../assets/images/cafedine/imgi_6_graphic-01-1.png';
+import joinCopyBg from '../assets/images/cafedine/imgi_25_join-us-copy-bg-1.png';
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({
@@ -136,7 +148,10 @@ const JoinUs = () => {
           </div>
 
           {/* ===== Decorative SVG at Bottom ===== */}
-          <div className="absolute bottom-0 left-0 w-full h-40 bg-[url('/src/assets/images/28.svg')] bg-no-repeat bg-contain bg-bottom"></div>
+          <div
+            className='absolute bottom-0 left-0 w-full h-40 bg-no-repeat bg-contain bg-bottom'
+            style={{ backgroundImage: `url(${svg28})` }}
+          ></div>
         </div>
       </section>
 
@@ -145,7 +160,7 @@ const JoinUs = () => {
           <div className='w-[70%] h-[85%] rounded-2xl gap-10 flex flex-wrap md:flex-nowrap'>
             <div className='h-full w-full md:w-[50%] rounded-2xl shadow-2xl shadow-gray-500/30'>
               <div className='p-5'>
-                <img src='/src/assets/images/Artboard-106.png' alt='' />
+                <img src={artboard106} alt='' />
                 <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-fit uppercase mt-5'>
                   Join as a home chef
                 </p>
@@ -158,23 +173,15 @@ const JoinUs = () => {
                   make a healthy & happy society around you.
                 </p>
                 <div className='flex mt-10 gap-5'>
-                  <img
-                    src='/src/assets/images/22.png'
-                    className='h-10 w-auto'
-                    alt='22'
-                  />
-                  <img
-                    src='/src/assets/images/23.png'
-                    className='h-10 w-auto'
-                    alt='23'
-                  />
+                  <img src={app22} className='h-10 w-auto' alt='22' />
+                  <img src={app23} className='h-10 w-auto' alt='23' />
                 </div>
               </div>
             </div>
 
             <div className='h-full w-full md:w-[50%] rounded-2xl shadow-2xl shadow-gray-500/30'>
               <div className='p-5'>
-                <img src='/src/assets/images/Artboard-107.png' alt='' />
+                <img src={artboard107} alt='' />
                 <p className='font-semibold text-[#60C8BC] border-b border-[#E62841] w-fit uppercase mt-5'>
                   Join as a customer
                 </p>
@@ -187,16 +194,8 @@ const JoinUs = () => {
                   advance orders of food items.
                 </p>
                 <div className='flex mt-10 gap-5'>
-                  <img
-                    src='/src/assets/images/22.png'
-                    className='h-10 w-auto'
-                    alt='22'
-                  />
-                  <img
-                    src='/src/assets/images/23.png'
-                    className='h-10 w-auto'
-                    alt='23'
-                  />
+                  <img src={app22} className='h-10 w-auto' alt='22' />
+                  <img src={app23} className='h-10 w-auto' alt='23' />
                 </div>
               </div>
             </div>
@@ -206,23 +205,22 @@ const JoinUs = () => {
 
       <section className='h-auto relative'>
         <img
-          className=' absolute w-screen mt-0 top-[0px]'
-          src='/src/assets/images/reversevector.svg'
+          className='absolute w-screen mt-0 top-[0px]'
+          src={reversevector}
           alt=''
         />
 
-        <div className="h-screen pt-40 w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')] bg-center bg-no-repeat bg-[length:100%_100%] bg-black/60 bg-blend-overlay">
+        <div
+          className='h-screen pt-40 w-full bg-center bg-no-repeat bg-[length:100%_100%] bg-black/60 bg-blend-overlay'
+          style={{ backgroundImage: `url(${joinBg1})` }}
+        >
           <div className='bg-fixed h-screen w-[70%] m-auto relative'>
             <p className='text-5xl text-white font-bold text-center'>
               Why Become Home Chef With Us?
             </p>
 
             <div className='mt-5 flex justify-center gap-20 flex-wrap'>
-              <img
-                style={{ height: '300px' }}
-                src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-                alt=''
-              />
+              <img style={{ height: '300px' }} src={joinGraphic} alt='' />
               <div className='w-full md:w-[50%] mt-10'>
                 <p className='font-bold text-2xl text-[#FFC947]'>
                   You are more than a homemaker
@@ -237,11 +235,7 @@ const JoinUs = () => {
             </div>
 
             <div className='flex flex-row-reverse justify-center gap-20 flex-wrap mt-10'>
-              <img
-                style={{ height: '300px' }}
-                src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-                alt=''
-              />
+              <img style={{ height: '300px' }} src={joinGraphic} alt='' />
               <div className='w-full md:w-[50%]'>
                 <p className='font-bold text-2xl text-[#FFC947] mt-10'>
                   You are more than a homemaker
@@ -256,11 +250,7 @@ const JoinUs = () => {
             </div>
 
             <div className='flex justify-center gap-20 flex-wrap mt-10'>
-              <img
-                style={{ height: '300px' }}
-                src='/src/assets/images/cafedine/imgi_6_graphic-01-1.png'
-                alt=''
-              />
+              <img style={{ height: '300px' }} src={joinGraphic} alt='' />
               <div className='w-full md:w-[50%] mt-10'>
                 <p className='font-bold text-2xl text-[#FFC947] mt-10'>
                   You are more than a homemaker
@@ -277,16 +267,19 @@ const JoinUs = () => {
         </div>
 
         <img
-          src='/src/assets/images/vector.svg'
+          src={vector}
           className='z-0 h-32 md:h-50 w-full absolute top-305 left-0'
           alt=''
         />
 
-        <div className="h-screen w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')] bg-center bg-no-repeat bg-[length:100%_105%] bg-black/60 bg-blend-overlay"></div>
+        <div
+          className='h-screen w-full bg-center bg-no-repeat bg-[length:100%_105%] bg-black/60 bg-blend-overlay'
+          style={{ backgroundImage: `url(${joinBg1})` }}
+        ></div>
       </section>
 
       <section className='lg:w-full lg:h-370'>
-        <div className='lg:w-[70%]  border m-auto lg:h-370'>
+        <div className='lg:w-[70%] border m-auto lg:h-370'>
           <div className='lg:w-full mt-5 lg:h-auto'>
             <p className='font-bold text-red-600'>How It Works?</p>
             <p className='text-5xl text-[#60C8BC] font-bold lg:w-[80%]'>
@@ -301,7 +294,10 @@ const JoinUs = () => {
               chef app from which you can accept orders.
             </p>
           </div>
-          <div className="lg:h-250 mt-60  bg-center bg-no-repeat bg-contain  bg-[url('/src/assets/images/cafedine/imgi_25_join-us-copy-bg-1.png')]">
+          <div
+            className='lg:h-250 mt-60 bg-center bg-no-repeat bg-contain'
+            style={{ backgroundImage: `url(${joinCopyBg})` }}
+          >
             <JoinusCard />
           </div>
         </div>
