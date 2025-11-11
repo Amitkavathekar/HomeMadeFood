@@ -33,12 +33,12 @@ const TiffinServiceInpune = () => {
     <>
       {/* HERO SECTION */}
       <section>
-        <div className='w-full min-h-[155px] flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 px-4 lg:px-10 py-10'>
+        <div className='w-full h-155 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 px-4 lg:px-10 py-10'>
           <div className='flex flex-col justify-center items-center lg:items-start w-full lg:w-[60%] text-center lg:text-left'>
             <p className='text-3xl sm:text-4xl font-thin w-full'>
               Mealawe - Homemade
             </p>
-            <p className='text-4xl sm:text-6xl md:text-7xl leading-tight text-[#63AB45] font-bold mt-3'>
+            <p className=' z-5 text-4xl sm:text-6xl md:text-7xl leading-tight text-[#63AB45] font-bold mt-3'>
               BEST TIFFIN SERVICE IN PUNE
             </p>
             <p className='text-[70px] sm:text-[120px] md:text-[150px] lg:text-[180px] mt-[-40px] sm:mt-[-80px] md:mt-[-110px] text-gray-200 font-bold w-full'>
@@ -52,12 +52,15 @@ const TiffinServiceInpune = () => {
               />
             </div>
           </div>
-
-          <img
-            src={shaniwarwada}
-            alt='Shaniwarwada'
-            className='w-[90%] sm:w-[70%] md:w-[50%] lg:w-[40%] rounded-xl'
-          />
+          <div>
+            {' '}
+            <img
+              src={shaniwarwada}
+              alt='Shaniwarwada'
+              style={{ width: '800px', height: '550px' }}
+              className=' mt-18 ml-10  w-[100%]  sm:w-[70%] md:w-[50%]  rounded-xl'
+            />
+          </div>
         </div>
       </section>
 
@@ -68,10 +71,8 @@ const TiffinServiceInpune = () => {
             width='100%'
             height='250'
             className='sm:w-[500px] sm:h-[300px] md:w-[600px] md:h-[350px] lg:w-[650px] lg:h-[400px] rounded-xl'
-            src='https://www.youtube.com/embed/IWzjivzAzFQ?list=TLGG22beIHSHiJgyOTA5MjAyNQ'
-            frameBorder='0'
-            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-            allowFullScreen
+            src='https://www.youtube.com/embed/IWzjivzAzFQ'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
           ></iframe>
           <div className='w-full lg:w-[45%] text-center lg:text-left'>
             <q className='text-3xl sm:text-4xl md:text-5xl font-bold text-[#FFFFFF]'>

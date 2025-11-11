@@ -36,7 +36,7 @@ const WhyUs = () => {
     <div>
       {/* hero */}
       <section
-        className="min-h-[40rem] w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay"
+        className='min-h-[40rem] w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay'
         style={{ backgroundImage: `url(${img26})` }}
       >
         <div className='w-[90%] lg:w-[70%] h-[75%] m-auto flex flex-col lg:flex-row items-center justify-center gap-6 py-10'>
@@ -56,7 +56,7 @@ const WhyUs = () => {
           {/* Right box */}
           <div className='h-auto w-full lg:w-5/6 flex justify-center lg:justify-end'>
             <img
-              className='w-[80%] sm:w-[60%] lg:w-[70%] xl:w-[60%] mt-6 lg:mt-0'
+              className='w-[80%] sm:w-[60%] lg:w-[80%] xl:w-[60%] mt-6 lg:mt-0'
               src={img27}
               alt=''
             />
@@ -65,8 +65,8 @@ const WhyUs = () => {
 
         {/* bottom background image */}
         <div
-          className="h-40 md:h-50 w-full bg-no-repeat bg-contain bg-center"
-          style={{ backgroundImage: `url(${img28})` }}
+          className='h-40 z-10 md:h-52 w-full bg-no-repeat bg-contain bg-center'
+          style={{ backgroundImage: `url(${vector})` }}
         ></div>
       </section>
 
@@ -75,13 +75,19 @@ const WhyUs = () => {
         <div className='mt-10 m-auto w-[90%] lg:w-[70%] space-y-20'>
           {/* Section #1 */}
           <div className='flex flex-col lg:flex-row items-center justify-between w-full gap-10'>
-            <img className='h-60 sm:h-80 md:h-96 bg-contain' src={img31} alt='' />
+            <img
+              className='h-60 sm:h-80 md:h-96 bg-contain'
+              src={img31}
+              alt=''
+            />
             <div
-              className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10"
+              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10'
               style={{ backgroundImage: `url(${img35})` }}
             >
               <div className='w-full md:w-[80%] text-center lg:text-left'>
-                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>#1</p>
+                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
+                  #1
+                </p>
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
                   Say “NO” to unhealthy outside food
                 </p>
@@ -100,11 +106,13 @@ const WhyUs = () => {
           {/* Section #2 */}
           <div className='flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10'>
             <div
-              className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10"
+              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10'
               style={{ backgroundImage: `url(${img35})` }}
             >
               <div className='w-full md:w-[80%] text-center lg:text-left'>
-                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>#2</p>
+                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
+                  #2
+                </p>
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
                   Get the authentic taste of your regional food
                 </p>
@@ -118,18 +126,28 @@ const WhyUs = () => {
                 </p>
               </div>
             </div>
-            <img className='h-60 sm:h-80 md:h-96 bg-contain' src={img32} alt='' />
+            <img
+              className='h-60 sm:h-80 md:h-96 bg-contain'
+              src={img32}
+              alt=''
+            />
           </div>
 
           {/* Section #3 */}
           <div className='flex flex-col lg:flex-row items-center justify-between w-full gap-10'>
-            <img className='h-60 sm:h-80 md:h-96 bg-contain' src={img33} alt='' />
+            <img
+              className='h-60 sm:h-80 md:h-96 bg-contain'
+              src={img33}
+              alt=''
+            />
             <div
-              className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10"
+              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10'
               style={{ backgroundImage: `url(${img35})` }}
             >
               <div className='w-full md:w-[80%] text-center lg:text-left'>
-                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>#3</p>
+                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
+                  #3
+                </p>
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
                   Online home food delivery within minutes
                 </p>
@@ -147,11 +165,13 @@ const WhyUs = () => {
           {/* Section #4 */}
           <div className='flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10'>
             <div
-              className="h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10"
+              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10'
               style={{ backgroundImage: `url(${img35})` }}
             >
               <div className='w-full md:w-[80%] text-center lg:text-left'>
-                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>#4</p>
+                <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
+                  #4
+                </p>
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
                   Creating entrepreneurs in every home
                 </p>
@@ -165,17 +185,25 @@ const WhyUs = () => {
                 </p>
               </div>
             </div>
-            <img className='h-60 sm:h-80 md:h-96 bg-contain' src={img34} alt='' />
+            <img
+              className='h-60 sm:h-80 md:h-96 bg-contain'
+              src={img34}
+              alt=''
+            />
           </div>
         </div>
       </section>
 
       {/* What's Cooking Section */}
       <section
-        className="relative h-470 md:h-600 lg:h-250 w-full bg-cover bg-black/50 bg-blend-overlay mt-20"
+        className='relative h-470 md:h-600 lg:h-250 w-full bg-cover bg-black/50 bg-blend-overlay mt-20'
         style={{ backgroundImage: `url(${img36})` }}
       >
-        <img className='z-0 h-32 md:h-50 w-full absolute top-0 left-0' src={img38} alt='' />
+        <img
+          className='z-0 h-32 md:h-50 w-full absolute top-0 left-0'
+          src={img38}
+          alt=''
+        />
         <div className='absolute top-25 md:top-35 lg:top-40 flex flex-col items-center justify-center text-center px-4'>
           <p className='text-3xl mt-10 md:text-5xl text-white font-bold'>
             Check out What’s Cooking?
@@ -191,7 +219,11 @@ const WhyUs = () => {
             <img className='lg:w-70 xl:w-80' src={imgBengali} alt='' />
             <img className='lg:w-70 xl:w-80' src={imgRajasthani} alt='' />
           </div>
-          <img src={vector} className='z-0 h-32 mt-170 md:h-50 w-full absolute top-0 left-0' alt='' />
+          <img
+            src={vector}
+            className='z-0 h-32 mt-170 md:h-50 w-full absolute top-0 left-0'
+            alt=''
+          />
         </div>
       </section>
 
@@ -209,8 +241,16 @@ const WhyUs = () => {
               <div className='flex gap-10 mt-5'>
                 <img src={qr} className='w-[150px] h-[150px]' alt='QR' />
                 <div className='flex flex-col justify-around'>
-                  <img src={img22} className='w-[160px] h-[55px]' alt='App Store' />
-                  <img src={img23} className='w-[160px] h-[55px]' alt='Play Store' />
+                  <img
+                    src={img22}
+                    className='w-[160px] h-[55px]'
+                    alt='App Store'
+                  />
+                  <img
+                    src={img23}
+                    className='w-[160px] h-[55px]'
+                    alt='Play Store'
+                  />
                 </div>
               </div>
             </div>
