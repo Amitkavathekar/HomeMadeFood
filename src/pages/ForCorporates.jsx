@@ -1,10 +1,21 @@
 import React from 'react';
 
+// ✅ Import all images here
+import HeaderImageCorporate from '../assets/images/Header-Image-Corporate.jpg';
+import HomeCookGood1 from '../assets/images/Home-Cook-Good1.png';
+import Vector from '../assets/images/vector.svg';
+import CorporateMealPlan from '../assets/images/cafedine/Corporate-Meal-Plan.jpg';
+import MealaweAccountManager from '../assets/images/cafedine/Mealawe-Account-Manager.jpg';
+import RegionalFoodIndia from '../assets/images/cafedine/Regional-food-India-300x242.jpg';
+
 const ForCorporates = () => {
   return (
     <div className='relative'>
       {/* 🟦 Top Hero Section */}
-      <section className="bg-[url('/src/assets/images/Header-Image-Corporate.jpg')] h-[650px] bg-cover bg-center flex justify-center items-center bg-black/50 bg-blend-overlay">
+      <section
+        className="h-[650px] bg-cover bg-center flex justify-center items-center bg-black/50 bg-blend-overlay"
+        style={{ backgroundImage: `url(${HeaderImageCorporate})` }}
+      >
         <div className='w-[90%] md:w-[80%] lg:w-[70%] flex flex-col lg:flex-row gap-5  lg:gap-20 items-center justify-center'>
           <div className='w-full lg:w-[50%] text-center lg:text-left px-4 lg:px-0'>
             <p className='text-[#FF7F6A] text-lg md:text-xl'>
@@ -20,7 +31,7 @@ const ForCorporates = () => {
 
           <div className='w-[60%] sm:w-[50%]  md:w-[40%] lg:w-[30%] h-full relative flex justify-center lg:justify-start'>
             <img
-              src='/src/assets/images/Home-Cook-Good1.png'
+              src={HomeCookGood1}
               alt=''
               className=' mt-40 md:mt-20 lg:-mt-8 max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:absolute'
             />
@@ -31,7 +42,7 @@ const ForCorporates = () => {
       {/* 🟥 What do You Get Section */}
       <section className='relative py-16 md:py-24 flex justify-center items-center'>
         <img
-          src='/src/assets/images/vector.svg'
+          src={Vector}
           alt='vector'
           className='absolute top-[-80px] md:top-[-120px] left-0 w-full'
         />
@@ -43,7 +54,7 @@ const ForCorporates = () => {
             {/* Card 1 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Corporate-Meal-Plan.jpg'
+                src={CorporateMealPlan}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
@@ -60,7 +71,7 @@ const ForCorporates = () => {
             {/* Card 2 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Mealawe-Account-Manager.jpg'
+                src={MealaweAccountManager}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
@@ -77,7 +88,7 @@ const ForCorporates = () => {
             {/* Card 3 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Regional-food-India-300x242.jpg'
+                src={RegionalFoodIndia}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
@@ -97,7 +108,7 @@ const ForCorporates = () => {
       {/* 🟩 What does Your Employee Get Section */}
       <section className='relative py-16 md:py-24 flex justify-center items-center'>
         <img
-          src='/src/assets/images/vector.svg'
+          src={Vector}
           alt='vector'
           className='absolute top-[-80px] md:top-[-120px] left-0 w-full'
         />
@@ -109,7 +120,7 @@ const ForCorporates = () => {
             {/* Card 1 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Corporate-Meal-Plan.jpg'
+                src={CorporateMealPlan}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
@@ -126,7 +137,7 @@ const ForCorporates = () => {
             {/* Card 2 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Mealawe-Account-Manager.jpg'
+                src={MealaweAccountManager}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
@@ -143,7 +154,7 @@ const ForCorporates = () => {
             {/* Card 3 */}
             <div className='w-[90%] sm:w-[70%] md:w-[30%] text-center'>
               <img
-                src='/src/assets/images/cafedine/Regional-food-India-300x242.jpg'
+                src={RegionalFoodIndia}
                 alt=''
                 className='mt-5 mb-5 rounded-2xl mx-auto'
               />
