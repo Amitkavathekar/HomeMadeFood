@@ -3,6 +3,7 @@ import thali1 from '/src/assets/images/thali1.jpg';
 import Button from './../components/Button';
 import { Link } from 'react-router-dom';
 import Cardhome from './../components/Cardhome';
+import JoinusCard from '../components/JoinusCard';
 
 const JoinUs = () => {
   const [formData, setFormData] = useState({
@@ -284,10 +285,24 @@ const JoinUs = () => {
         <div className="h-screen w-full bg-[url('/src/assets/images/cafedine/Join-Us-bg2-1.jpg')] bg-center bg-no-repeat bg-[length:100%_105%] bg-black/60 bg-blend-overlay"></div>
       </section>
 
-      <section className='lg:w-full lg:h-170'>
-        <div className='lg:w-[70%]  border m-auto lg:h-full'>
-          <div className='lg:w-full lg:h:20 border'>
-            <p>How It Works?</p>
+      <section className='lg:w-full lg:h-370'>
+        <div className='lg:w-[70%]  border m-auto lg:h-370'>
+          <div className='lg:w-full mt-5 lg:h-auto'>
+            <p className='font-bold text-red-600'>How It Works?</p>
+            <p className='text-5xl text-[#60C8BC] font-bold lg:w-[80%]'>
+              Register as a home chef with us in 4 easy steps
+            </p>
+            <p
+              className='lg:w-[80%] text-xl text-gray-400 font-medium leading-{1}
+ mt-10'
+            >
+              You will have to register with us & rest we will take care of.
+              After you are enrolled, you will have access to the Mealawe home
+              chef app from which you can accept orders.
+            </p>
+          </div>
+          <div className="lg:h-250 mt-60  bg-center bg-no-repeat bg-contain  bg-[url('/src/assets/images/cafedine/imgi_25_join-us-copy-bg-1.png')]">
+            <JoinusCard />
           </div>
         </div>
       </section>

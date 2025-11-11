@@ -8,6 +8,7 @@ import StepsCompoent from '../components/StepsCompoent';
 import StepsCompoentReverse from '../components/StepsCompoentReverse';
 import Footer from '../components/Footer';
 
+// React Icons
 import {
   FaFacebookF,
   FaInstagram,
@@ -16,6 +17,35 @@ import {
   FaPhoneAlt,
 } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
+
+// Imported Images
+import thali from '../assets/images/thali.webp';
+import mobile from '../assets/images/mobile.webp';
+import girlwiththali from '../assets/images/girlwiththali.webp';
+import deliveryBoy from '../assets/images/delivery-boy.webp';
+import imgi6 from '../assets/images/imgi_6_ui-elements-01 (1).webp';
+import img3 from '../assets/images/3.webp';
+import img2 from '../assets/images/2.webp';
+import img4 from '../assets/images/4.webp';
+import img5 from '../assets/images/5.webp';
+import img6 from '../assets/images/6.webp';
+import img7 from '../assets/images/7.webp';
+import img8 from '../assets/images/8.webp';
+import img9 from '../assets/images/9.webp';
+import img10 from '../assets/images/10.jpg';
+import img11 from '../assets/images/11.jpg';
+import img12 from '../assets/images/12.jpg';
+import appStore from '../assets/images/22.png';
+import playStore from '../assets/images/23.png';
+
+// Logos (As Seen In section)
+import logo14 from '../assets/images/14.png';
+import logo15 from '../assets/images/15.webp';
+import logo16 from '../assets/images/16.svg';
+import logo17 from '../assets/images/17.png';
+import logo18 from '../assets/images/18.png';
+import logo19 from '../assets/images/19.png';
+import logo20 from '../assets/images/20.png';
 
 const blogPosts = [
   {
@@ -26,7 +56,7 @@ const blogPosts = [
     category: 'People Health',
     description:
       'Indian spices are also known for their medicinal properties, such as antibiotic, boost metabolism, antioxidants, & ability to preserve food',
-    image: '/src/assets/images/10.jpg',
+    image: img10,
   },
   {
     id: 2,
@@ -36,7 +66,7 @@ const blogPosts = [
     category: 'Company',
     description:
       'An FSSAI food license is essential to run food business in India. It is even critical for F&B operators making less than Rs 12 Lakh annually',
-    image: '/src/assets/images/12.jpg',
+    image: img12,
   },
   {
     id: 3,
@@ -46,7 +76,7 @@ const blogPosts = [
     category: 'Women Power',
     description:
       'Some of the guidelines on how to start a tiffin service from home are obtaining FSSAI license, plan for dishes, register on mealawve, etc.',
-    image: '/src/assets/images/11.jpg',
+    image: img11,
   },
 ];
 
@@ -94,7 +124,7 @@ const Home = () => {
         >
           <img
             className='h-[300px] sm:h-[420px] lg:h-148 w-auto'
-            src='/src/assets/images/thali.webp'
+            src={thali}
             alt='Thali'
           />
         </div>
@@ -112,17 +142,17 @@ const Home = () => {
             <Cardhome
               heading='Mealawe Application'
               label='Download Mealawe app from iOS or Playstore. No manual process; download, signup & place a homemade food order.'
-              src='/src/assets/images/mobile.webp'
+              src={mobile}
             />
             <Cardhome
               heading='No Restaurant'
               label='Home – made food served from nearby family kitchens. They are families like yours. We do not partner with restaurants or dhaba.'
-              src='/src/assets/images/girlwiththali.webp'
+              src={girlwiththali}
             />
             <Cardhome
               heading='Reliable Home Delivery'
               label='We have a reliable door-to-door delivery. You can even place advance or subscription food orders. Our delivery takes care of the rest.'
-              src='/src/assets/images/delivery-boy.webp'
+              src={deliveryBoy}
             />
           </div>
         </div>
@@ -147,11 +177,7 @@ const Home = () => {
       {/* Advance Orders */}
       <section className='flex flex-col lg:flex-row justify-between items-center w-full  py-10 gap-10'>
         <div className='w-full lg:w-[45%] flex flex-col items-center'>
-          <img
-            src='/src/assets/images/imgi_6_ui-elements-01 (1).webp'
-            alt=''
-            className='w-full mb-6'
-          />
+          <img src={imgi6} alt='' className='w-full mb-6' />
           <div className='text-center lg:text-right'>
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               Advance Order
@@ -161,7 +187,7 @@ const Home = () => {
               days. Now you can plan for a perfect weekend.
             </p>
           </div>
-          <img src='/src/assets/images/3.webp' alt='' className='mt-8 w-full' />
+          <img src={img3} alt='' className='mt-8 w-full' />
         </div>
 
         <div className='w-full lg:w-[45%] flex flex-col gap-10'>
@@ -174,7 +200,7 @@ const Home = () => {
               dinner.
             </p>
           </div>
-          <img src='/src/assets/images/2.webp' alt='' className='w-full' />
+          <img src={img2} alt='' className='w-full' />
           <div>
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               Regional Snacks
@@ -197,33 +223,29 @@ const Home = () => {
           <StepsCompoent
             heading='Download Mealawe App'
             label='Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.'
-            src='/src/assets/images/4.webp'
+            src={img4}
           />
           <StepsCompoentReverse
             heading='Create Your Account'
             label='Create your profile with the help of your mobile number. Set your email and cuisine preferences and you are good to go.'
-            src='/src/assets/images/5.webp'
+            src={img5}
           />
           <StepsCompoent
             heading='Order Homemade Food'
             label='You can choose homemade food from a variety of cuisine. You can place daily as well as advance order.'
-            src='/src/assets/images/6.webp'
+            src={img6}
           />
           <StepsCompoentReverse
             heading='Food Delivery in Minutes'
             label='You will get the homemade food delivered at your home, office, or anywhere else in no time.'
-            src='/src/assets/images/7.webp'
+            src={img7}
           />
         </div>
       </section>
 
       {/* Join Section */}
       <div className='flex flex-col lg:flex-row items-center justify-center gap-10 mt-30 px-4'>
-        <img
-          src='/src/assets/images/8.webp'
-          alt=''
-          className='w-full sm:w-[450px] lg:w-[550px]'
-        />
+        <img src={img8} alt='' className='w-full sm:w-[450px] lg:w-[550px]' />
         <div className='w-full lg:w-[40%] text-center p-4'>
           <h2 className='text-2xl sm:text-3xl font-bold text-[#63AB45] underline mb-2'>
             JOIN AS A CUSTOMER
@@ -237,22 +259,17 @@ const Home = () => {
             food items.
           </p>
           <div className='flex justify-center gap-4'>
-            <img
-              src='/src/assets/images/22.png'
-              alt='App Store'
-              className='h-10 sm:h-12'
-            />
-            <img
-              src='/src/assets/images/23.png'
-              alt='Play Store'
-              className='h-10 sm:h-12'
-            />
+            <img src={appStore} alt='App Store' className='h-10 sm:h-12' />
+            <img src={playStore} alt='Play Store' className='h-10 sm:h-12' />
           </div>
         </div>
       </div>
 
       {/* Blog Section */}
-      <section className="mt-20 py-12 px-4 bg-[url('/src/assets/images/9.webp')] bg-cover text-center">
+      <section
+        className='mt-20 py-12 px-4 bg-cover text-center'
+        style={{ backgroundImage: `url(${img9})` }}
+      >
         <h2 className='text-3xl sm:text-4xl font-bold mb-4'>Blog</h2>
         <p className='max-w-2xl mx-auto text-lg mb-6'>
           Mealawian writers are too passionate about sharing our know-how on
@@ -291,27 +308,21 @@ const Home = () => {
       </p>
 
       <div className='flex flex-wrap  justify-center items-center gap-16 border-b border-gray-300 pb-6'>
-        {[
-          '14.png',
-          '15.webp',
-          '16.svg',
-          '17.png',
-          '18.png',
-          '19.png',
-          '20.png',
-        ].map((img, i) => (
-          <img
-            key={i}
-            src={`/src/assets/images/${img}`}
-            alt='Logo'
-            className='
-                        w-24 lg:w-50 sm:w-32 h-auto object-contain
-                        filter grayscale
-                        hover:grayscale-0
-                        transition duration-300 ease-in-out
-                      '
-          />
-        ))}
+        {[logo14, logo15, logo16, logo17, logo18, logo19, logo20].map(
+          (img, i) => (
+            <img
+              key={i}
+              src={img}
+              alt='Logo'
+              className='
+                w-24 lg:w-50 sm:w-32 h-auto object-contain
+                filter grayscale
+                hover:grayscale-0
+                transition duration-300 ease-in-out
+              '
+            />
+          )
+        )}
       </div>
       <Footer />
     </div>
