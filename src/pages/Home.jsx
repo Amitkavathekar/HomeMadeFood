@@ -8,16 +8,6 @@ import StepsCompoent from '../components/StepsCompoent';
 import StepsCompoentReverse from '../components/StepsCompoentReverse';
 import Footer from '../components/Footer';
 
-// React Icons
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaYoutube,
-  FaLinkedinIn,
-  FaPhoneAlt,
-} from 'react-icons/fa';
-import { MdEmail } from 'react-icons/md';
-
 // Imported Images
 import thali from '../assets/images/thali.webp';
 import mobile from '../assets/images/mobile.webp';
@@ -82,76 +72,78 @@ const blogPosts = [
 
 const Home = () => {
   return (
-    <div className='w-full overflow-x-hidden'>
+    <div className="w-full overflow-x-hidden">
       {/* Hero Section */}
-      <section className='flex flex-col lg:flex-row justify-between items-center mt-7 w-full'>
+      <section className="flex flex-col lg:flex-row justify-between items-center mt-7 w-full px-4 lg:px-8">
         {/* Left Content */}
         <div
-          className='h-auto lg:h-[550px] w-full lg:w-[720px] bg-contain bg-no-repeat flex items-center justify-center'
-          style={{ backgroundImage: `url(${vector1})` }}
+          className="w-full lg:w-[48%] bg-contain bg-no-repeat flex items-center justify-center"
+          style={{ backgroundImage: `url(${vector1})`, backgroundPosition: 'left top' }}
         >
-          <div className='ml-0 lg:ml-40 mt-10 lg:mt-20 text-center lg:text-left p-4'>
-            <p className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
+          <div className="w-full max-w-[560px] text-center lg:text-left p-4 lg:pl-12 lg:pr-4">
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               100%
             </p>
-            <p className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#63AB45]'>
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#63AB45] leading-tight">
               Homemade
             </p>
-            <p className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold'>
+            <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
               Food is
             </p>
-            <p className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold'>
+            <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold">
               Waiting For You
             </p>
-            <p className='text-base sm:text-lg mt-3'>
+            <p className="text-base sm:text-lg mt-3 max-w-xl mx-auto lg:mx-0">
               You can get the best homemade food from your neighbourhood homes.
               The food will be full of soul, health, & taste.
             </p>
-            <Link to='/signup'>
-              <Button
-                className='w-48 sm:w-56 md:w-64 mt-6 sm:mt-8 h-12 rounded-3xl text-lg sm:text-xl text-white hover:opacity-90 transition'
-                style={{ backgroundColor: '#63AB45' }}
-                label='Order Now'
-              />
-            </Link>
+            <div className="flex justify-center lg:justify-start">
+              <Link to="/signup" className="mt-6 sm:mt-8">
+                <Button
+                  className="w-48 sm:w-56 md:w-64 h-12 rounded-3xl text-lg sm:text-xl text-white hover:opacity-90 transition"
+                  style={{ backgroundColor: '#63AB45' }}
+                  label="Order Now"
+                />
+              </Link>
+            </div>
           </div>
         </div>
 
         {/* Right Image */}
         <div
-          className='h-[400px] sm:h-[500px] lg:h-[600px] w-full lg:w-[630px] bg-cover bg-no-repeat flex justify-center items-center'
-          style={{ backgroundImage: `url(${isolate})` }}
+          className="w-full lg:w-[50%] flex justify-center items-center mt-8 lg:mt-0"
+          style={{ backgroundImage: `url(${isolate})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
         >
           <img
-            className='h-[300px] sm:h-[420px] lg:h-148 w-auto'
+            className="h-[220px] sm:h-[320px] md:h-[420px] lg:h-[520px] xl:h-[560px] w-auto"
             src={thali}
-            alt='Thali'
+            alt="Thali"
           />
         </div>
       </section>
 
       {/* Features Section */}
-      <section className='mt-10 w-full'>
-        <div className='w-[90%] lg:w-[75%] mx-auto text-center'>
-          <p className='text-3xl sm:text-4xl font-bold mb-10'>
+      <section className="mt-10 w-full px-4 lg:px-0">
+        <div className="w-[95%] sm:w-[90%] lg:w-[75%] mx-auto text-center">
+          <p className="text-3xl sm:text-4xl font-bold mb-10">
             We DO NOT serve food from{' '}
-            <span className='text-[#E2394D]'>Restaurants!</span>
+            <span className="text-[#E2394D]">Restaurants!</span>
           </p>
 
-          <div className='flex flex-col md:flex-row justify-evenly items-center gap-10'>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-6">
             <Cardhome
-              heading='Mealawe Application'
-              label='Download Mealawe app from iOS or Playstore. No manual process; download, signup & place a homemade food order.'
+              heading="Mealawe Application"
+              label="Download Mealawe app from iOS or Playstore. No manual process; download, signup & place a homemade food order."
               src={mobile}
             />
             <Cardhome
-              heading='No Restaurant'
-              label='Home – made food served from nearby family kitchens. They are families like yours. We do not partner with restaurants or dhaba.'
+              heading="No Restaurant"
+              label="Home – made food served from nearby family kitchens. They are families like yours. We do not partner with restaurants or dhaba."
               src={girlwiththali}
             />
             <Cardhome
-              heading='Reliable Home Delivery'
-              label='We have a reliable door-to-door delivery. You can even place advance or subscription food orders. Our delivery takes care of the rest.'
+              heading="Reliable Home Delivery"
+              label="We have a reliable door-to-door delivery. You can even place advance or subscription food orders. Our delivery takes care of the rest."
               src={deliveryBoy}
             />
           </div>
@@ -159,14 +151,14 @@ const Home = () => {
       </section>
 
       {/* Why Us */}
-      <section className='py-12 px-6 text-center bg-white'>
-        <div className='max-w-3xl mx-auto'>
-          <h2 className='text-3xl sm:text-4xl font-bold mb-4'>
-            <span className='text-[#63AB45]'>Why Us?</span> – Because you are
+      <section className="py-12 px-6 text-center bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+            <span className="text-[#63AB45]">Why Us?</span> – Because you are
             very
-            <span className='block text-[#63AB45]'>Special!</span>
+            <span className="block text-[#63AB45]">Special!</span>
           </h2>
-          <p className='text-gray-600 text-base sm:text-lg leading-relaxed'>
+          <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
             You will have every reason to count on us for healthy & tasty
             homemade food from nearby family kitchens. You will find a different
             concept & flavour while ordering home food from Mealawe.
@@ -175,37 +167,37 @@ const Home = () => {
       </section>
 
       {/* Advance Orders */}
-      <section className='flex flex-col lg:flex-row justify-between items-center w-full  py-10 gap-10'>
-        <div className='w-full lg:w-[45%] flex flex-col items-center'>
-          <img src={imgi6} alt='' className='w-full mb-6' />
-          <div className='text-center lg:text-right'>
-            <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
+      <section className="flex flex-col lg:flex-row justify-between items-start w-full py-10 gap-8 px-4 lg:px-8">
+        <div className="w-full lg:w-[45%] flex flex-col items-center">
+          <img src={imgi6} alt="advance" className="w-full rounded-lg mb-6" />
+          <div className="text-center lg:text-right">
+            <p className="text-[#63AB45] text-4xl sm:text-5xl font-bold">
               Advance Order
             </p>
-            <p className='text-lg lg:w-90  sm:text-2xl mt-2'>
+            <p className="text-lg lg:w-[90%] sm:text-2xl mt-2">
               You can order your choice of homemade food in advance for up to 2
               days. Now you can plan for a perfect weekend.
             </p>
           </div>
-          <img src={img3} alt='' className='mt-8 w-full' />
+          <img src={img3} alt="img3" className="mt-8 w-full rounded-lg" />
         </div>
 
-        <div className='w-full lg:w-[45%] flex flex-col gap-10'>
+        <div className="w-full lg:w-[45%] flex flex-col gap-8">
           <div>
-            <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
+            <p className="text-[#63AB45] text-4xl sm:text-5xl text-center sm:w-full font-bold">
               All Day Order
             </p>
-            <p className='text-lg lg:w-90 sm:text-2xl mt-2'>
+            <p className="text-lg lg:w-[90%] sm:text-2xl sm:p-2 text-center mt-2">
               Instant homemade food order during breakfast, lunch, high tea and
               dinner.
             </p>
           </div>
-          <img src={img2} alt='' className='w-full' />
+          <img src={img2} alt="img2" className="w-full rounded-lg" />
           <div>
-            <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
+            <p className="text-[#63AB45] text-4xl sm:text-5xl font-bold text-center sm:text-left">
               Regional Snacks
             </p>
-            <p className='text-lg lg:w-90 sm:text-2xl mt-2'>
+            <p className="text-lg lg:w-[90%] sm:text-2xl mt-2 text-center sm:text-left">
               You can order a variety of your choice regional snacks such as
               pickles, papad, sweets, any side snacks, etc.
             </p>
@@ -214,88 +206,90 @@ const Home = () => {
       </section>
 
       {/* Steps Section */}
-      <p className='text-3xl sm:text-4xl lg:text-5xl text-center text-[#63AB45] font-bold mt-10'>
+      <p className="text-3xl sm:text-4xl lg:text-5xl text-center text-[#63AB45] font-bold mt-10">
         Order in 4 simple steps
       </p>
 
-      <section className='mt-10 w-full'>
-        <div className='w-[100%] mx-auto flex flex-col lg:flex-row flex-wrap justify-center gap-10'>
+      <section className="mt-10 w-full px-4 lg:px-8">
+        <div className="w-full mx-auto flex flex-col lg:flex-row flex-wrap justify-center gap-8">
           <StepsCompoent
-            heading='Download Mealawe App'
-            label='Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.'
+            heading="Download Mealawe App"
+            label="Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India."
             src={img4}
           />
           <StepsCompoentReverse
-            heading='Create Your Account'
-            label='Create your profile with the help of your mobile number. Set your email and cuisine preferences and you are good to go.'
+            heading="Create Your Account"
+            label="Create your profile with the help of your mobile number. Set your email and cuisine preferences and you are good to go."
             src={img5}
           />
           <StepsCompoent
-            heading='Order Homemade Food'
-            label='You can choose homemade food from a variety of cuisine. You can place daily as well as advance order.'
+            heading="Order Homemade Food"
+            label="You can choose homemade food from a variety of cuisine. You can place daily as well as advance order."
             src={img6}
           />
           <StepsCompoentReverse
-            heading='Food Delivery in Minutes'
-            label='You will get the homemade food delivered at your home, office, or anywhere else in no time.'
+            heading="Food Delivery in Minutes"
+            label="You will get the homemade food delivered at your home, office, or anywhere else in no time."
             src={img7}
           />
         </div>
       </section>
 
       {/* Join Section */}
-      <div className='flex flex-col lg:flex-row items-center justify-center gap-10 mt-30 px-4'>
-        <img src={img8} alt='' className='w-full sm:w-[450px] lg:w-[550px]' />
-        <div className='w-full lg:w-[40%] text-center p-4'>
-          <h2 className='text-2xl sm:text-3xl font-bold text-[#63AB45] underline mb-2'>
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-8 mt-12 px-4 lg:px-8">
+        <div className="w-full lg:w-[50%]">
+          <img src={img8} alt="join" className="w-full rounded-lg" />
+        </div>
+        <div className="w-full lg:w-[40%] text-center p-4">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#63AB45] underline mb-2">
             JOIN AS A CUSTOMER
           </h2>
-          <h3 className='text-xl sm:text-2xl font-semibold text-[#63AB45] mb-4'>
+          <h3 className="text-xl sm:text-2xl font-semibold text-[#63AB45] mb-4">
             Order your choice of homemade food right away
           </h3>
-          <p className='text-gray-700 mb-6 text-base sm:text-lg'>
+          <p className="text-gray-700 mb-6 text-base sm:text-lg">
             You can get the best homemade food within no time. You can place
             online food orders on the go. Also you can place advance orders of
             food items.
           </p>
-          <div className='flex justify-center gap-4'>
-            <img src={appStore} alt='App Store' className='h-10 sm:h-12' />
-            <img src={playStore} alt='Play Store' className='h-10 sm:h-12' />
+          <div className="flex justify-center gap-4">
+            <img src={appStore} alt="App Store" className="h-10 sm:h-12" />
+            <img src={playStore} alt="Play Store" className="h-10 sm:h-12" />
           </div>
         </div>
       </div>
 
       {/* Blog Section */}
       <section
-        className='mt-20 py-12 px-4 bg-cover text-center'
-        style={{ backgroundImage: `url(${img9})` }}
+        className="mt-20 py-12 px-4 bg-cover text-center"
+        style={{ backgroundImage: `url(${img9})`, backgroundPosition: 'center' }}
       >
-        <h2 className='text-3xl sm:text-4xl font-bold mb-4'>Blog</h2>
-        <p className='max-w-2xl mx-auto text-lg mb-6'>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-4">Blog</h2>
+        <p className="max-w-2xl mx-auto text-lg mb-6">
           Mealawian writers are too passionate about sharing our know-how on
           food. After all, we are food experts!!
         </p>
-        <button className='border border-[#63AB45] text-[#63AB45] font-semibold px-6 py-2 rounded-md hover:bg-[#63AB45] hover:text-white transition mb-8'>
+        <button className="border border-[#63AB45] text-[#63AB45] font-semibold px-6 py-2 rounded-md hover:bg-[#63AB45] hover:text-white transition mb-8">
           Read More
         </button>
 
-        <div className='flex flex-wrap justify-center gap-8'>
+        <div className="flex flex-wrap justify-center gap-8">
           {blogPosts.map((e) => (
             <div
               key={e.id}
-              className='bg-white rounded-3xl shadow-xl w-[90%] sm:w-72'
+              className="bg-white rounded-3xl shadow-xl w-[90%] sm:w-72"
             >
               <img
                 src={e.image}
                 alt={e.title}
-                className='h-48 w-full object-cover'
+                className="h-48 w-full object-cover rounded-t-3xl"
               />
-              <div className='p-4 text-left'>
-                <h3 className='font-semibold text-lg mb-2'>{e.title}</h3>
-                <p className='text-sm text-gray-500 mb-2'>
+              <div className="p-4 text-left">
+                <h3 className="font-semibold text-lg mb-2">{e.title}</h3>
+                <p className="text-sm text-gray-500 mb-2">
                   {e.author} | {e.date} | {e.category}
                 </p>
-                <p className='text-sm'>{e.description}</p>
+                <p className="text-sm">{e.description}</p>
               </div>
             </div>
           ))}
@@ -303,27 +297,21 @@ const Home = () => {
       </section>
 
       {/* Footer */}
-      <p className='lg:text-4xl sm:text-3xl mb-20 text-center font-bold mb-6l'>
+      <p className="lg:text-4xl sm:text-3xl text-center font-bold mt-12 mb-6">
         As Seen In
       </p>
 
-      <div className='flex flex-wrap  justify-center items-center gap-16 border-b border-gray-300 pb-6'>
-        {[logo14, logo15, logo16, logo17, logo18, logo19, logo20].map(
-          (img, i) => (
-            <img
-              key={i}
-              src={img}
-              alt='Logo'
-              className='
-                w-24 lg:w-50 sm:w-32 h-auto object-contain
-                filter grayscale
-                hover:grayscale-0
-                transition duration-300 ease-in-out
-              '
-            />
-          )
-        )}
+      <div className="flex flex-wrap justify-center items-center gap-8 border-b border-gray-300 pb-6 px-4 lg:px-0">
+        {[logo14, logo15, logo16, logo17, logo18, logo19, logo20].map((img, i) => (
+          <img
+            key={i}
+            src={img}
+            alt={`logo-${i}`}
+            className="w-20 sm:w-24 lg:w-32 h-auto object-contain filter grayscale hover:grayscale-0 transition duration-300 ease-in-out"
+          />
+        ))}
       </div>
+
       <Footer />
     </div>
   );

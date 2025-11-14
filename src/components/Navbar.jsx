@@ -32,10 +32,16 @@ const Navbar = () => {
         </div>
 
         {/* Main Menu (Desktop + Tablet) */}
-        <div
-          className={`flex-col lg:flex-row lg:flex lg:items-center gap-6 text-xl font-medium transition-all duration-300 ease-in-out
-          ${isOpen ? 'flex mt-4' : 'hidden'} lg:mt-0`}
-        >
+   <div
+  className={`flex-col lg:flex-row lg:flex lg:items-center gap-6 text-xl font-medium transition-all duration-300 ease-in-out
+  ${
+    isOpen
+      ? 'flex absolute top-20 left-0 w-full bg-white shadow-md p-6 z-50 flex-col items-center text-center'
+      : 'hidden'
+  } lg:static lg:mt-0 lg:shadow-none lg:p-0 lg:items-center lg:space-y-0 lg:text-left`}
+>
+
+
           {/* About Us Dropdown */}
           <Menu as='div' className='relative inline-block text-left'>
             <Menu.Button className='inline-flex justify-center items-center gap-x-1.5 rounded-md px-3 py-2 hover:bg-gray-100 border-none outline-none'>
