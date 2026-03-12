@@ -1,53 +1,62 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Button from './../components/Button';
-import Cardhome from './../components/Cardhome';
-import JoinusCard from '../components/JoinusCard';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
+import Cardhome from "../components/Cardhome";
+import JoinusCard from "../components/JoinusCard";
 
-// ===== Imported Images =====
-import thali1 from '../assets/images/thali1.jpg';
-import svg28 from '../assets/images/28.svg';
-import artboard106 from '../assets/images/Artboard-106.png';
-import artboard107 from '../assets/images/Artboard-107.png';
-import app22 from '../assets/images/22.png';
-import app23 from '../assets/images/23.png';
-import reversevector from '../assets/images/reversevector.svg';
-import vector from '../assets/images/vector.svg';
-import joinBg1 from '../assets/images/cafedine/Join-Us-bg2-1.jpg';
-import joinGraphic from '../assets/images/cafedine/imgi_6_graphic-01-1.png';
-import joinCopyBg from '../assets/images/cafedine/imgi_25_join-us-copy-bg-1.png';
+// Images
+import thali1 from "../assets/images/thali1.jpg";
+import svg28 from "../assets/images/28.svg";
+import artboard106 from "../assets/images/Artboard-106.png";
+import artboard107 from "../assets/images/Artboard-107.png";
+import app22 from "../assets/images/22.png";
+import app23 from "../assets/images/23.png";
+import reversevector from "../assets/images/reversevector.svg";
+import vector from "../assets/images/vector.svg";
+import joinBg1 from "../assets/images/cafedine/Join-Us-bg2-1.jpg";
+import joinGraphic from "../assets/images/cafedine/imgi_6_graphic-01-1.png";
+import joinCopyBg from "../assets/images/cafedine/imgi_25_join-us-copy-bg-1.png";
 
-const JoinUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    mobile: '',
-    pincode: '',
-    city: '',
+type FormData = {
+  name: string;
+  email: string;
+  mobile: string;
+  pincode: string;
+  city: string;
+};
+
+const JoinUs: React.FC = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    mobile: "",
+    pincode: "",
+    city: "",
   });
 
-  // Single handler with switch-case
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
 
     switch (name) {
-      case 'name':
+      case "name":
         setFormData((prev) => ({
           ...prev,
           name: value.charAt(0).toUpperCase() + value.slice(1),
         }));
         break;
 
-      case 'email':
+      case "email":
         setFormData((prev) => ({
           ...prev,
           email: value.toLowerCase(),
         }));
         break;
 
-      case 'mobile':
-      case 'pincode':
-      case 'city':
+      case "mobile":
+      case "pincode":
+      case "city":
         setFormData((prev) => ({
           ...prev,
           [name]: value,

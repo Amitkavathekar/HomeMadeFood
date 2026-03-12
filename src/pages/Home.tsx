@@ -1,78 +1,87 @@
-import React from 'react';
-import vector1 from '../assets/images/Vector-1.png';
-import isolate from '../assets/images/Isolation_Mode.png';
-import Button from '../components/Button';
-import { Link } from 'react-router-dom';
-import Cardhome from '../components/Cardhome';
-import StepsCompoent from '../components/StepsCompoent';
-import StepsCompoentReverse from '../components/StepsCompoentReverse';
-import Footer from '../components/Footer';
+import React from "react";
+import vector1 from "../assets/images/Vector-1.png";
+import isolate from "../assets/images/Isolation_Mode.png";
+import Button from "../components/Button";
+import { Link } from "react-router-dom";
+import Cardhome from "../components/Cardhome";
+import StepsCompoent from "../components/StepsCompoent";
+import StepsCompoentReverse from "../components/StepsCompoentReverse";
+import Footer from "../components/Footer";
 
-// Imported Images
-import thali from '../assets/images/thali.webp';
-import mobile from '../assets/images/mobile.webp';
-import girlwiththali from '../assets/images/girlwiththali.webp';
-import deliveryBoy from '../assets/images/delivery-boy.webp';
-import imgi6 from '../assets/images/imgi_6_ui-elements-01 (1).webp';
-import img3 from '../assets/images/3.webp';
-import img2 from '../assets/images/2.webp';
-import img4 from '../assets/images/4.webp';
-import img5 from '../assets/images/5.webp';
-import img6 from '../assets/images/6.webp';
-import img7 from '../assets/images/7.webp';
-import img8 from '../assets/images/8.webp';
-import img9 from '../assets/images/9.webp';
-import img10 from '../assets/images/10.jpg';
-import img11 from '../assets/images/11.jpg';
-import img12 from '../assets/images/12.jpg';
-import appStore from '../assets/images/22.png';
-import playStore from '../assets/images/23.png';
+// Images
+import thali from "../assets/images/thali.webp";
+import mobile from "../assets/images/mobile.webp";
+import girlwiththali from "../assets/images/girlwiththali.webp";
+import deliveryBoy from "../assets/images/delivery-boy.webp";
+import imgi6 from "../assets/images/imgi_6_ui-elements-01 (1).webp";
+import img3 from "../assets/images/3.webp";
+import img2 from "../assets/images/2.webp";
+import img4 from "../assets/images/4.webp";
+import img5 from "../assets/images/5.webp";
+import img6 from "../assets/images/6.webp";
+import img7 from "../assets/images/7.webp";
+import img8 from "../assets/images/8.webp";
+import img9 from "../assets/images/9.webp";
+import img10 from "../assets/images/10.jpg";
+import img11 from "../assets/images/11.jpg";
+import img12 from "../assets/images/12.jpg";
+import appStore from "../assets/images/22.png";
+import playStore from "../assets/images/23.png";
 
-// Logos (As Seen In section)
-import logo14 from '../assets/images/14.png';
-import logo15 from '../assets/images/15.webp';
-import logo16 from '../assets/images/16.svg';
-import logo17 from '../assets/images/17.png';
-import logo18 from '../assets/images/18.png';
-import logo19 from '../assets/images/19.png';
-import logo20 from '../assets/images/20.png';
+import logo14 from "../assets/images/14.png";
+import logo15 from "../assets/images/15.webp";
+import logo16 from "../assets/images/16.svg";
+import logo17 from "../assets/images/17.png";
+import logo18 from "../assets/images/18.png";
+import logo19 from "../assets/images/19.png";
+import logo20 from "../assets/images/20.png";
 
-const blogPosts = [
+type BlogPost = {
+  id: number;
+  title: string;
+  author: string;
+  date: string;
+  category: string;
+  description: string;
+  image: string;
+};
+
+const blogPosts: BlogPost[] = [
   {
     id: 1,
-    title: 'Indian Spices Health Benefits',
-    author: 'Mealawve Admin',
-    date: 'Jan 22, 2023',
-    category: 'People Health',
+    title: "Indian Spices Health Benefits",
+    author: "Mealawve Admin",
+    date: "Jan 22, 2023",
+    category: "People Health",
     description:
-      'Indian spices are also known for their medicinal properties, such as antibiotic, boost metabolism, antioxidants, & ability to preserve food',
+      "Indian spices are also known for their medicinal properties, such as antibiotic, boost metabolism, antioxidants, & ability to preserve food",
     image: img10,
   },
   {
     id: 2,
-    title: 'Do I Need a License to Sell Homemade Food?',
-    author: 'Mealawve Admin',
-    date: 'Jan 21, 2023',
-    category: 'Company',
+    title: "Do I Need a License to Sell Homemade Food?",
+    author: "Mealawve Admin",
+    date: "Jan 21, 2023",
+    category: "Company",
     description:
-      'An FSSAI food license is essential to run food business in India. It is even critical for F&B operators making less than Rs 12 Lakh annually',
+      "An FSSAI food license is essential to run food business in India. It is even critical for F&B operators making less than Rs 12 Lakh annually",
     image: img12,
   },
   {
     id: 3,
-    title: 'How to Start a Tiffin Service from Home?',
-    author: 'Mealawve Admin',
-    date: 'Jan 21, 2023',
-    category: 'Women Power',
+    title: "How to Start a Tiffin Service from Home?",
+    author: "Mealawve Admin",
+    date: "Jan 21, 2023",
+    category: "Women Power",
     description:
-      'Some of the guidelines on how to start a tiffin service from home are obtaining FSSAI license, plan for dishes, register on mealawve, etc.',
+      "Some of the guidelines on how to start a tiffin service from home are obtaining FSSAI license, plan for dishes, register on mealawve, etc.",
     image: img11,
   },
 ];
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div className='w-full overflow-x-hidden'>
+     <div className='w-full overflow-x-hidden'>
       {/* Hero Section */}
       <section className='flex flex-col lg:flex-row justify-between items-center mt-7 w-full '>
         {/* Left Content */}
@@ -101,7 +110,10 @@ const Home = () => {
               The food will be full of soul, health, & taste.
             </p>
             <div className='flex justify-center lg:justify-start'>
-              <Link to='/signup' className='mt-6 sm:mt-8'>
+              <Link
+                to='/signup'
+                className='mt-6 sm:mt-8'
+              >
                 <Button
                   className='w-48 sm:w-56 md:w-64 h-12 rounded-3xl text-lg sm:text-xl text-white hover:opacity-90 transition'
                   style={{ backgroundColor: '#63AB45' }}
@@ -138,7 +150,7 @@ const Home = () => {
             <span className='text-[#E2394D]'>Restaurants!</span>
           </p>
 
-          <div className='flex flex-col md:flex-row justify-between items-start md:items-center gap-8 md:gap-6'>
+          <div className='flex flex-col md:flex-row md:align-cent  justify-between items-center md:items-center gap-8 md:gap-6  '>
             <Cardhome
               heading='Mealawe Application'
               label='Download Mealawe app from iOS or Playstore. No manual process; download, signup & place a homemade food order.'
@@ -177,7 +189,11 @@ const Home = () => {
       {/* Advance Orders */}
       <section className='flex flex-col lg:flex-row justify-between items-start w-full py-10 gap-8 '>
         <div className='w-full lg:w-[45%] flex flex-col items-center'>
-          <img src={imgi6} alt='advance' className='w-full rounded-lg mb-6' />
+          <img
+            src={imgi6}
+            alt='advance'
+            className='w-full rounded-lg mb-6'
+          />
           <div className='text-center lg:text-right'>
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold'>
               Advance Order
@@ -187,7 +203,11 @@ const Home = () => {
               days. Now you can plan for a perfect weekend.
             </p>
           </div>
-          <img src={img3} alt='img3' className='mt-8 w-full rounded-lg' />
+          <img
+            src={img3}
+            alt='img3'
+            className='mt-8 w-full rounded-lg'
+          />
         </div>
 
         <div className='w-full lg:w-[45%] flex flex-col gap-8'>
@@ -200,7 +220,11 @@ const Home = () => {
               dinner.
             </p>
           </div>
-          <img src={img2} alt='img2' className='w-full rounded-lg' />
+          <img
+            src={img2}
+            alt='img2'
+            className='w-full rounded-lg'
+          />
           <div>
             <p className='text-[#63AB45] text-4xl sm:text-5xl font-bold text-center sm:text-left'>
               Regional Snacks
@@ -246,7 +270,11 @@ const Home = () => {
       {/* Join Section */}
       <div className='flex flex-col lg:flex-row items-center justify-center gap-8 mt-12 px-4 lg:px-8'>
         <div className='w-full lg:w-[50%]'>
-          <img src={img8} alt='join' className='w-full rounded-lg' />
+          <img
+            src={img8}
+            alt='join'
+            className='w-full rounded-lg'
+          />
         </div>
         <div className='w-full lg:w-[40%] text-center p-4'>
           <h2 className='text-2xl sm:text-3xl font-bold text-[#63AB45] underline mb-2'>
@@ -261,8 +289,16 @@ const Home = () => {
             food items.
           </p>
           <div className='flex justify-center gap-4'>
-            <img src={appStore} alt='App Store' className='h-10 sm:h-12' />
-            <img src={playStore} alt='Play Store' className='h-10 sm:h-12' />
+            <img
+              src={appStore}
+              alt='App Store'
+              className='h-10 sm:h-12'
+            />
+            <img
+              src={playStore}
+              alt='Play Store'
+              className='h-10 sm:h-12'
+            />
           </div>
         </div>
       </div>

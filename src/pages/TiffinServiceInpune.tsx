@@ -1,22 +1,23 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../components/Button';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
-// ✅ Importing all images properly so they load on Vercel
-import shaniwarwada from '../assets/images/shaniwarwada.webp';
-import deluxeMealPlan from '../assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png';
-import ecoFriendly from '../assets/images/eco-friendly-package.png';
-import scooter from '../assets/images/scooter.png';
-import setting from '../assets/images/setting.png';
-import repeat from '../assets/images/repeat.png';
+import shaniwarwada from "../assets/images/shaniwarwada.webp";
+import deluxeMealPlan from "../assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png";
+import ecoFriendly from "../assets/images/eco-friendly-package.png";
+import scooter from "../assets/images/scooter.png";
+import setting from "../assets/images/setting.png";
+import repeat from "../assets/images/repeat.png";
 
-const TiffinServiceInpune = () => {
-  const [count, setcount] = useState(0);
+const TiffinServiceInpune: React.FC = () => {
+  const [count, setcount] = useState<number>(0);
+
   const taget = 200000;
   const speed = 5;
 
   useEffect(() => {
     let current = 0;
+
     const interval = setInterval(() => {
       current += 1000;
       setcount(current);
@@ -30,7 +31,7 @@ const TiffinServiceInpune = () => {
   }, []);
 
   return (
-    <>
+   <>
       {/* HERO SECTION */}
       <section>
         <div className='w-full h-155 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 px-4 lg:px-10 py-10'>

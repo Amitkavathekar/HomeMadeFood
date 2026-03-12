@@ -1,42 +1,40 @@
-import React from 'react';
-import Footer from '../components/Footer';
+import React from "react";
+import Footer from "../components/Footer";
 
-// Image imports
-import img26 from '../assets/images/26.jpg';
-import img27 from '../assets/images/27.png';
-import img28 from '../assets/images/28.svg';
-import img31 from '../assets/images/31.png';
-import img32 from '../assets/images/32.png';
-import img33 from '../assets/images/33.png';
-import img34 from '../assets/images/34.png';
-import img35 from '../assets/images/35.png';
-import img36 from '../assets/images/36.jpg';
-import img38 from '../assets/images/38.svg';
-import vector from '../assets/images/vector.svg';
+// Images
+import img26 from "../assets/images/26.jpg";
+import img27 from "../assets/images/27.png";
+import img28 from "../assets/images/28.svg";
+import img31 from "../assets/images/31.png";
+import img32 from "../assets/images/32.png";
+import img33 from "../assets/images/33.png";
+import img34 from "../assets/images/34.png";
+import img35 from "../assets/images/35.png";
+import img36 from "../assets/images/36.jpg";
+import img38 from "../assets/images/38.svg";
+import vector from "../assets/images/vector.svg";
 
-// Cafedine + regional images
-import imgPunjabi from '../assets/images/imgi_8_punjabi.png';
-import imgGujarati from '../assets/images/cafedine/imgi_7_gujarati.png';
-import imgSouthIndian from '../assets/images/cafedine/imgi_10_south-indian.png';
-import imgKashmiri from '../assets/images/cafedine/imgi_5_kashmiri.png';
-import imgMaharashtrian from '../assets/images/cafedine/imgi_8_maharashtrian.png';
-import imgBihari from '../assets/images/cafedine/imgi_11_bihari.png';
-import imgNorthEastern from '../assets/images/cafedine/imgi_6_north0eastern.png';
-import imgBengali from '../assets/images/imgi_9_bengali.png';
-import imgRajasthani from '../assets/images/imgi_12_rajasthani.png';
+import imgPunjabi from "../assets/images/imgi_8_punjabi.png";
+import imgGujarati from "../assets/images/cafedine/imgi_7_gujarati.png";
+import imgSouthIndian from "../assets/images/cafedine/imgi_10_south-indian.png";
+import imgKashmiri from "../assets/images/cafedine/imgi_5_kashmiri.png";
+import imgMaharashtrian from "../assets/images/cafedine/imgi_8_maharashtrian.png";
+import imgBihari from "../assets/images/cafedine/imgi_11_bihari.png";
+import imgNorthEastern from "../assets/images/cafedine/imgi_6_north0eastern.png";
+import imgBengali from "../assets/images/imgi_9_bengali.png";
+import imgRajasthani from "../assets/images/imgi_12_rajasthani.png";
 
-// App Store, Play Store, QR, Chef
-import img22 from '../assets/images/22.png';
-import img23 from '../assets/images/23.png';
-import qr from '../assets/images/cafedine/qr.png';
-import homeChef from '../assets/images/home-chef-updated-graphic-610x659.png';
+import img22 from "../assets/images/22.png";
+import img23 from "../assets/images/23.png";
+import qr from "../assets/images/cafedine/qr.png";
+import homeChef from "../assets/images/home-chef-updated-graphic-610x659.png";
 
-const WhyUs = () => {
+const WhyUs: React.FC = () => {
   return (
     <div>
       {/* hero */}
       <section
-        className='min-h-[40rem] relative w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay'
+        className='min-h-[40rem] relative xl-relative w-full bg-cover bg-no-repeat bg-black/50 bg-blend-overlay'
         style={{ backgroundImage: `url(${img26})` }}
       >
         <div className='w-[90%] lg:w-[70%] h-[75%] m-auto flex flex-col lg:flex-row items-center justify-center gap-6 py-10'>
@@ -64,7 +62,7 @@ const WhyUs = () => {
         </div>
         <img
           src={vector}
-          className='  h-32 mt-56 md:h-50 w-full absolute top-55 left-0'
+          className='  h-32 mt-56 md:h-50 w-full absolute top-55 left-0 bg-amber-600  lg-top-300 xl-top-55 '
           alt=''
         />
       </section>
@@ -80,7 +78,7 @@ const WhyUs = () => {
               alt=''
             />
             <div
-              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] p-6 sm:p-10'
+              className='h-auto bg-contain flex items-center justify-center bg-no-repeat w-full lg:w-[50%] xl-w-20 p-6 sm:p-10'
               style={{ backgroundImage: `url(${img35})` }}
             >
               <div className='w-full md:w-[80%] text-center lg:text-left'>
@@ -208,15 +206,51 @@ const WhyUs = () => {
             Check out What’s Cooking?
           </p>
           <div className='flex flex-wrap mt-10 gap-6 lg:gap-10 w-[90%] h-auto lg:flex lg:flex-wrap items-center justify-center'>
-            <img className='lg:w-70 xl:w-80' src={imgPunjabi} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgGujarati} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgSouthIndian} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgKashmiri} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgMaharashtrian} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgBihari} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgNorthEastern} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgBengali} alt='' />
-            <img className='lg:w-70 xl:w-80' src={imgRajasthani} alt='' />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgPunjabi}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgGujarati}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgSouthIndian}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgKashmiri}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgMaharashtrian}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgBihari}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgNorthEastern}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgBengali}
+              alt=''
+            />
+            <img
+              className='lg:w-70 xl:w-80'
+              src={imgRajasthani}
+              alt=''
+            />
           </div>
           <img
             src={vector}
@@ -238,7 +272,11 @@ const WhyUs = () => {
                 Download for free!
               </p>
               <div className='flex gap-10 mt-5'>
-                <img src={qr} className='w-[150px] h-[150px]' alt='QR' />
+                <img
+                  src={qr}
+                  className='w-[150px] h-[150px]'
+                  alt='QR'
+                />
                 <div className='flex flex-col justify-around'>
                   <img
                     src={img22}
@@ -255,7 +293,11 @@ const WhyUs = () => {
             </div>
           </div>
           <div className='flex items-center w-full'>
-            <img src={homeChef} className='w-[450px] h-[500px]' alt='Chef' />
+            <img
+              src={homeChef}
+              className='w-[450px] h-[500px]'
+              alt='Chef'
+            />
           </div>
         </div>
       </section>
