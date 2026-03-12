@@ -1,9 +1,15 @@
 import React, { useState } from "react";
-import { Menu } from "@headlessui/react";
 import Button from "./Button";
 import { LiaSearchSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -22,164 +28,105 @@ const Navbar: React.FC = () => {
           />
         </Link>
 
-        {/* Hamburger icon */}
+        {/* Mobile Hamburger */}
         <div className="lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-3xl focus:outline-none text-gray-700"
+            className="text-3xl text-gray-700"
           >
             {isOpen ? <HiX /> : <HiOutlineMenu />}
           </button>
         </div>
 
-        {/* Main Menu */}
+        {/* Menu */}
         <div
-          className={`flex-col lg:flex-row lg:flex lg:items-center gap-6 text-xl font-medium transition-all duration-300 ease-in-out
+          className={`flex-col lg:flex-row lg:flex lg:items-center gap-6 text-xl font-medium transition-all duration-300
           ${
             isOpen
               ? "flex absolute top-20 left-0 w-full bg-white shadow-md p-6 z-50 flex-col items-center text-center"
               : "hidden"
-          } lg:static lg:mt-0 lg:shadow-none lg:p-0 lg:items-center lg:space-y-0 lg:text-left`}
+          } lg:static lg:mt-0 lg:shadow-none lg:p-0 lg:items-center lg:text-left`}
         >
 
-          {/* About Us */}
-          <Menu as="div" className="relative inline-block text-left">
-            <Menu.Button className="inline-flex justify-center items-center gap-x-1.5 rounded-md px-3 py-2 hover:bg-gray-100 border-none outline-none">
-              About Us
-              <svg
-                viewBox="0 0 20 20"
-                fill="black"
-                aria-hidden="true"
-                className="-mr-1 h-5 w-5 text-gray-400"
-              >
-                <path
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </Menu.Button>
+          {/* About Us Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="px-3 py-2 hover:bg-gray-100 rounded-md">
+                About Us
+              </button>
+            </DropdownMenuTrigger>
 
-            <Menu.Items className="absolute right-0 mt-2 w-48 origin-top-right rounded-md bg-white text-black shadow-lg ring-1 ring-black/10 focus:outline-none z-50">
-              <div className="py-1">
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/whyus"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Why Us
-                    </Link>
-                  )}
-                </Menu.Item>
+            <DropdownMenuContent className="w-48">
 
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/blog"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Blog
-                    </Link>
-                  )}
-                </Menu.Item>
+              <DropdownMenuItem asChild>
+                <Link to="/whyus">Why Us</Link>
+              </DropdownMenuItem>
 
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/Career"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Career
-                    </Link>
-                  )}
-                </Menu.Item>
-              </div>
-            </Menu.Items>
-          </Menu>
+              <DropdownMenuItem asChild>
+                <Link to="/blog">Blog</Link>
+              </DropdownMenuItem>
 
-          {/* Tiffin Services */}
-          <Menu as="div" className="relative inline-block text-left">
-            <Menu.Button className="inline-flex justify-center items-center gap-x-1.5 rounded-md px-3 py-2 hover:bg-gray-100 border-none outline-none">
-              Tiffin Services
-              <svg
-                viewBox="0 0 20 20"
-                fill="black"
-                aria-hidden="true"
-                className="-mr-1 h-5 w-5 text-gray-400"
-              >
-                <path
-                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
-                  clipRule="evenodd"
-                  fillRule="evenodd"
-                />
-              </svg>
-            </Menu.Button>
+              <DropdownMenuItem asChild>
+                <Link to="/career">Career</Link>
+              </DropdownMenuItem>
 
-            <Menu.Items className="absolute right-0 mt-2 w-52 origin-top-right rounded-md bg-white text-black shadow-lg ring-1 ring-black/10 focus:outline-none z-50">
-              <div className="py-1">
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/TiffinServiceInpune"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Tiffin Services in Pune
-                    </Link>
-                  )}
-                </Menu.Item>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/TiffinServiceInBenglore"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Tiffin Services in Benglore
-                    </Link>
-                  )}
-                </Menu.Item>
+          {/* Tiffin Services Dropdown */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className="px-3 py-2 hover:bg-gray-100 rounded-md">
+                Tiffin Services
+              </button>
+            </DropdownMenuTrigger>
 
-                <Menu.Item>
-                  {({ active }: { active: boolean }) => (
-                    <Link
-                      to="/TiffinServiceInKota"
-                      className={`block px-4 py-2 text-sm ${
-                        active ? "bg-gray-100 text-gray-500" : "text-black"
-                      }`}
-                    >
-                      Tiffin Services in Kota
-                    </Link>
-                  )}
-                </Menu.Item>
-              </div>
-            </Menu.Items>
-          </Menu>
+            <DropdownMenuContent className="w-56">
+
+              <DropdownMenuItem asChild>
+                <Link to="/TiffinServiceInpune">
+                  Tiffin Services in Pune
+                </Link>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem asChild>
+                <Link to="/TiffinServiceInBenglore">
+                  Tiffin Services in Benglore
+                </Link>
+              </DropdownMenuItem>
+
+              <DropdownMenuItem asChild>
+                <Link to="/TiffinServiceInKota">
+                  Tiffin Services in Kota
+                </Link>
+              </DropdownMenuItem>
+
+            </DropdownMenuContent>
+          </DropdownMenu>
 
           {/* Static Links */}
-          <Link to="/forcorporates" className="hover:text-blue-500 transition-colors">
+          <Link
+            to="/forcorporates"
+            className="hover:text-blue-500 transition-colors"
+          >
             For Corporates
           </Link>
 
-          <Link to="/joinus" className="hover:text-blue-500 transition-colors">
+          <Link
+            to="/joinus"
+            className="hover:text-blue-500 transition-colors"
+          >
             Join Us
           </Link>
 
-          <Link to="/contactus" className="hover:text-blue-500 transition-colors">
+          <Link
+            to="/contactus"
+            className="hover:text-blue-500 transition-colors"
+          >
             Contact Us
           </Link>
 
-          {/* Search */}
+          {/* Search Icon */}
           <div className="text-2xl hover:text-blue-500 cursor-pointer">
             <LiaSearchSolid />
           </div>
@@ -194,6 +141,7 @@ const Navbar: React.FC = () => {
               />
             </Link>
           </div>
+
         </div>
 
         {/* Desktop Button */}
@@ -206,6 +154,7 @@ const Navbar: React.FC = () => {
             />
           </Link>
         </div>
+
       </div>
     </div>
   );
