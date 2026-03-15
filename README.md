@@ -1,6 +1,6 @@
 # 🍲 HomeMadeFodd — Food Delivery Web App
 
-A modern and responsive **Food Delivery Web Application** built using **React 18 and Vite** with full **Progressive Web App (PWA)** support.
+A modern and responsive **Food Delivery Web Application** built using **React 18 and Vite** 
 
 The platform allows users to explore homemade food items, browse menus, and order meals from local home chefs.
 
@@ -9,6 +9,15 @@ The project demonstrates **modern frontend development**, reusable component arc
 🔗 **Live Website**  
 https://home-made-food-kocv.vercel.app/
 
+
+---
+
+## 🧰 Tech Badges
+
+![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=flat-square&logo=tailwindcss)
+![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square)
 ---
 
 ## 🚀 Features
@@ -29,14 +38,7 @@ https://home-made-food-kocv.vercel.app/
   - moment
 - 🧩 **Modular Folder Structure**
 
----
 
-## 🧰 Tech Badges
-
-![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
-![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)
-![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=flat-square&logo=tailwindcss)
-![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square)
 
 ---
 
@@ -53,13 +55,6 @@ https://home-made-food-kocv.vercel.app/
 | Icons | React Icons |
 | Utilities | Moment.js |
 | PWA | Service Worker + Web App Manifest |
-
----
-
-## 📋 Prerequisites
-
-- **Node.js** v16 or higher
-- **npm** or **yarn**
 
 ---
 
@@ -97,103 +92,6 @@ http://localhost:5173
 
 ---
 
-## 🏗️ Build and Preview
-
-Build the production version
-
-```bash
-npm run build
-```
-
-Preview production build locally
-
-```bash
-npm run preview
-```
-
----
-
-## 📱 Progressive Web App (PWA)
-
-This project supports **PWA features** including:
-
-- Installable web application
-- Offline support
-- Service worker caching
-- Faster loading experience
-
-### Install App
-
-**Desktop**
-
-Click the install icon in the browser address bar.
-
-**Mobile**
-
-Open browser menu → **Add to Home Screen**
-
----
-
-## 🧪 Testing PWA Features
-
-### Install Prompt Testing
-
-```bash
-npm run build
-npm run preview
-```
-
-Open
-
-```
-http://localhost:5173
-```
-
-### Service Worker Testing
-
-Open DevTools → **Application → Service Workers**
-
-### Offline Testing
-
-Open DevTools → **Network → Offline**
-
-Refresh the page.  
-The app should still work because assets are cached.
-
----
-
-## 🖼️ PWA Asset Preparation
-
-⚠️ Replace placeholder icons in the `public` folder before production.
-
-Replace:
-
-```
-pwa-192x192.svg → pwa-192x192.png
-pwa-512x512.svg → pwa-512x512.png
-apple-touch-icon.svg → apple-touch-icon.png
-favicon.svg → favicon.ico
-```
-
-Tools:
-
-- https://www.pwabuilder.com/
-- https://www.favicon-generator.org/
-- https://appicon.co/
-
----
-
-## ✅ PWA Checklist
-
-- ✔ manifest.json configured
-- ✔ Service Worker registered
-- ✔ HTTPS ready
-- ✔ Responsive UI
-- ⚠ Replace placeholder icons
-- ⚠ Test on real devices
-- ⚠ Verify offline support
-
----
 
 ## 📂 Project Structure
 
@@ -284,7 +182,7 @@ npm install -g vercel
 vercel --prod
 ```
 
-### Deploy with Netlify
+### Deploy with Vercel
 
 ```bash
 npm run build
@@ -294,9 +192,7 @@ Upload the **dist/** folder.
 
 ---
 
-## 👨‍💻 Author
-
-**Amit Kavathekar**
+## 
 
 🔗 Portfolio  
 https://amit-rtst.vercel.app/
