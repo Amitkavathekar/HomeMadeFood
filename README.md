@@ -1,197 +1,315 @@
-# HomeMadeFodd
+# 🍲 HomeMadeFodd — Food Delivery Web App
 
-A modern React application with Progressive Web App (PWA) capabilities built with Vite.
+A modern and responsive **Food Delivery Web Application** built using **React 18 and Vite** with full **Progressive Web App (PWA)** support.
+
+The platform allows users to explore homemade food items, browse menus, and order meals from local home chefs.
+
+The project demonstrates **modern frontend development**, reusable component architecture, API integration, and **offline-capable installable web applications**.
+
+🔗 **Live Website**  
+https://home-made-food-kocv.vercel.app/
+
+---
 
 ## 🚀 Features
 
-- ⚡ **Vite** - Fast build tool and development server
-- ⚛️ **React 18** - Latest React with modern hooks
-- 🎨 **Tailwind** - Styling framework
-- 🛣️ **React Router** - Client-side routing
-- 📱 **PWA Ready** - Installable, offline-capable app
-- 🔄 **Auto-updates** - Service worker with auto-update functionality
-- 📊 **Caching Strategy** - Smart caching for better performance
-- 📦 **Additional Packages**: axios, react-icons, react-hook-form, yup, formik, moment
+- ⚡ **Vite** for blazing-fast development & build
+- ⚛️ **React 18** with modern hooks
+- 🎨 **Tailwind CSS** for utility-first styling
+- 🛣️ **React Router v6** for routing
+- 📱 **PWA Support** (installable, offline, standalone)
+- 🔄 **Service Worker** with auto-update logic
+- 📊 **Smart Caching** for static assets and API responses
+- 📦 **Libraries Used**
+  - axios
+  - react-icons
+  - react-hook-form
+  - formik
+  - yup
+  - moment
+- 🧩 **Modular Folder Structure**
+
+---
+
+## 🧰 Tech Badges
+
+![React](https://img.shields.io/badge/React-18-61dafb?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-5-646cff?style=flat-square&logo=vite)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3-38bdf8?style=flat-square&logo=tailwindcss)
+![PWA](https://img.shields.io/badge/PWA-Ready-purple?style=flat-square)
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technologies |
+|--------|-------------|
+| Framework | React 18 |
+| Build Tool | Vite |
+| Styling | Tailwind CSS |
+| Routing | React Router |
+| HTTP Client | Axios |
+| Forms | React Hook Form / Formik / Yup |
+| Icons | React Icons |
+| Utilities | Moment.js |
+| PWA | Service Worker + Web App Manifest |
+
+---
 
 ## 📋 Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn
+- **Node.js** v16 or higher
+- **npm** or **yarn**
 
-## 🛠️ Installation
+---
 
-1. Navigate to the project directory:
-   ```bash
-   cd HomeMadeFodd
-   ```
+## 🚀 Getting Started
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+Clone the repository
 
-## 🏃‍♂️ Running the Application
+```bash
+git clone https://github.com/Amitkavathekar/HomeMadeFodd.git
+```
 
-### Development Mode
+Navigate into the project
+
+```bash
+cd HomeMadeFodd
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run development server
+
 ```bash
 npm run dev
 ```
-The app will be available at `http://localhost:5173`
 
-### Production Build
+Open browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build and Preview
+
+Build the production version
+
 ```bash
 npm run build
 ```
 
-### Preview Production Build
+Preview production build locally
+
 ```bash
 npm run preview
 ```
 
-## 📱 PWA Features
+---
 
-### Installation
-- **Desktop**: Look for the install icon in the address bar or use the "Install App" button
-- **Mobile**: Use "Add to Home Screen" option in your browser menu
+## 📱 Progressive Web App (PWA)
 
-### Offline Support
-This app works offline thanks to service worker caching:
-- Static assets are cached automatically
-- API responses are cached with NetworkFirst strategy
-- Fallback pages for offline scenarios
+This project supports **PWA features** including:
 
-### Testing PWA Features
+- Installable web application
+- Offline support
+- Service worker caching
+- Faster loading experience
 
-1. **Install Prompt Testing**:
-   ```bash
-   # Serve the built app locally
-   npm run build
-   npm run preview
-   ```
+### Install App
 
-2. **Service Worker Testing**:
-   - Open DevTools → Application → Service Workers
-   - Check if SW is registered and active
+**Desktop**
 
-3. **Offline Testing**:
-   - Build and serve the app
-   - Open DevTools → Network → check "Offline"
-   - Refresh the page - it should still work
+Click the install icon in the browser address bar.
 
-### PWA Asset Replacement
+**Mobile**
 
-⚠️ **Important**: Replace the placeholder SVG icons with proper PNG icons:
+Open browser menu → **Add to Home Screen**
 
-1. Replace these files in `public/` folder:
-   - `pwa-192x192.svg` → `pwa-192x192.png`
-   - `pwa-512x512.svg` → `pwa-512x512.png`
-   - `apple-touch-icon.svg` → `apple-touch-icon.png`
-   - `favicon.svg` → `favicon.ico`
+---
 
-2. Use tools like:
-   - [PWA Asset Generator](https://www.pwabuilder.com/)
-   - [Favicon Generator](https://www.favicon-generator.org/)
-   - [App Icon Generator](https://appicon.co/)
+## 🧪 Testing PWA Features
 
-### PWA Checklist
+### Install Prompt Testing
 
-- ✅ Web App Manifest configured
-- ✅ Service Worker registered
-- ✅ HTTPS ready (required for PWA)
-- ✅ Responsive design
-- ⚠️ Replace placeholder icons with real ones
-- ⚠️ Test on actual devices
-- ⚠️ Test offline functionality
+```bash
+npm run build
+npm run preview
+```
 
-## 📁 Project Structure
+Open
 
 ```
-HomeMadeFodd/
-├── public/
-│   ├── pwa-192x192.svg    # Replace with PNG
-│   ├── pwa-512x512.svg    # Replace with PNG
-│   └── apple-touch-icon.svg # Replace with PNG
-├── src/
-│   ├── components/        # Reusable components
-│   ├── pages/            # Page components
-│   ├── hooks/            # Custom React hooks
-│   │   └── usePWA.js      # PWA functionality hook
-│   ├── store/            # State management
-│   ├── utils/            # Utility functions
-│   │   └── axiosInstance.js # Axios configuration
-│   ├── assets/          # Static assets
-│   ├── App.jsx           # Main App component
-│   └── main.jsx           # Entry point
-├── vite.config.js        # Vite configuration
-└── package.json
+http://localhost:5173
 ```
+
+### Service Worker Testing
+
+Open DevTools → **Application → Service Workers**
+
+### Offline Testing
+
+Open DevTools → **Network → Offline**
+
+Refresh the page.  
+The app should still work because assets are cached.
+
+---
+
+## 🖼️ PWA Asset Preparation
+
+⚠️ Replace placeholder icons in the `public` folder before production.
+
+Replace:
+
+```
+pwa-192x192.svg → pwa-192x192.png
+pwa-512x512.svg → pwa-512x512.png
+apple-touch-icon.svg → apple-touch-icon.png
+favicon.svg → favicon.ico
+```
+
+Tools:
+
+- https://www.pwabuilder.com/
+- https://www.favicon-generator.org/
+- https://appicon.co/
+
+---
+
+## ✅ PWA Checklist
+
+- ✔ manifest.json configured
+- ✔ Service Worker registered
+- ✔ HTTPS ready
+- ✔ Responsive UI
+- ⚠ Replace placeholder icons
+- ⚠ Test on real devices
+- ⚠ Verify offline support
+
+---
+
+## 📂 Project Structure
+
+```
+HomeMadeFodd
+│
+├── public
+│   ├── pwa-192x192.svg
+│   ├── pwa-512x512.svg
+│   └── apple-touch-icon.svg
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── hooks
+│   │   └── usePWA.js
+│   ├── store
+│   ├── utils
+│   │   └── axiosInstance.js
+│   ├── assets
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
 
 ## 🎨 Styling
 
-This project uses **Tailwind** for styling:
+This project uses **Tailwind CSS**.
 
-- Classes are available globally
+- Utility classes available globally
 - Configuration in `vite.config.js`
-- Customize in `src/index.css`
+- Customize styles in `src/index.css`
+
+---
 
 ## 🌐 API Integration
 
-Axios is pre-configured in `src/utils/axiosInstance.js`:
+Axios configuration example:
 
 ```javascript
-import { api } from './utils/axiosInstance';
+import { api } from "./utils/axiosInstance";
 
-// GET request
-const data = await api.get('/users');
+const users = await api.get("/users");
 
-// POST request
-const response = await api.post('/users', { name: 'John' });
+const response = await api.post("/users", {
+  name: "John"
+});
 ```
 
 ### Environment Variables
-Create a `.env` file:
+
+Create `.env` file:
+
 ```
 VITE_API_URL=https://your-api-url.com
 ```
 
-## 🔧 Available Scripts
+Use in code:
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint (if configured)
+```
+import.meta.env.VITE_API_URL
+```
+
+---
+
+## 🔧 Useful Scripts
+
+```
+npm run dev
+npm run build
+npm run preview
+npm run lint
+```
+
+---
 
 ## 🚀 Deployment
 
-### Vercel
+### Deploy with Vercel
+
 ```bash
 npm install -g vercel
 vercel --prod
 ```
 
-### Netlify
+### Deploy with Netlify
+
 ```bash
 npm run build
-# Upload dist/ folder to Netlify
 ```
 
-### PWA Deployment Checklist
-- ✅ Build with `npm run build`
-- ✅ Serve over HTTPS
-- ✅ Test service worker registration
-- ✅ Verify manifest.json is accessible
-- ✅ Test install prompt on mobile/desktop
-- ✅ Replace placeholder icons with real ones
-
-## 🎯 Next Steps
-
-1. **Replace PWA Icons**: Replace SVG placeholders with proper PNG icons
-2. **Test PWA Features**: Test installation and offline functionality
-3. **Customize Caching**: Modify caching strategy in vite.config.js
-4. **Add Components**: Start building your app components
-5. **Configure API**: Set up your API endpoints
-6. **Deploy**: Deploy to a PWA-compatible hosting service
+Upload the **dist/** folder.
 
 ---
 
-Built using React + Vite + PWA
+## 👨‍💻 Author
+
+**Amit Kavathekar**
+
+🔗 Portfolio  
+https://amit-rtst.vercel.app/
+
+🔗 LinkedIn  
+https://www.linkedin.com/in/amitkavathekar/
+
+🔗 GitHub  
+https://github.com/Amitkavathekar
+
+🔗 Instagram  
+https://instagram.com/amittt_0x9/
+
+---
+
+⭐ If you like this project, consider giving it a **star on GitHub**.
