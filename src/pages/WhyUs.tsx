@@ -121,8 +121,10 @@ const WhyUs: React.FC = () => {
             <Card className='w-full lg:w-[50%] bg-transparent border-none shadow-none'>
               <CardContent
                 className='bg-contain bg-no-repeat p-6 sm:p-10'
-                style={{ backgroundImage: `url(${img35}
-                  )` }}
+                style={{
+                  backgroundImage: `url(${img35}
+                  )`,
+                }}
               >
                 <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
                   #2
@@ -219,7 +221,7 @@ const WhyUs: React.FC = () => {
 
       {/* What's Cooking */}
       <section
-        className='relative w-full bg-cover bg-black/50 bg-blend-overlay mt-20'
+        className='relative w-full h-240 flex justify-center bg-cover bg-black/50 bg-blend-overlay py-20'
         style={{ backgroundImage: `url(${img36})` }}
       >
         <img
@@ -227,7 +229,7 @@ const WhyUs: React.FC = () => {
           src={img38}
         />
 
-        <div className='flex flex-wrap justify-center gap-6 mt-20'>
+        <div className='flex flex-wrap justify-center w-[80%] h-[60%] gap-6 mt-20'>
           {[
             imgPunjabi,
             imgGujarati,
@@ -241,12 +243,12 @@ const WhyUs: React.FC = () => {
           ].map((img, i) => (
             <Card
               key={i}
-              className='p-2 bg-transparent border-none shadow-none'
+              className='p-2 h-50 bg-cover border-none shadow-none'
             >
               <CardContent className='p-0'>
                 <img
                   src={img}
-                  className='lg:w-70 xl:w-80'
+                  className='lg:w-60 xl:w-70 bg-cover'
                 />
               </CardContent>
             </Card>
@@ -255,7 +257,11 @@ const WhyUs: React.FC = () => {
       </section>
 
       {/* Download */}
-      <section className='border lg:h-175 w-full flex justify-center items-center'>
+      <section className='border relative lg:h-175 w-full flex justify-center items-center'>
+        <img
+          className='w-full absolute -top-30 left-0'
+          src={img28}
+        />
         <div className='lg:h-160 flex justify-between lg:w-[70%]'>
           <div className='lg:w-full flex items-center'>
             <div>
