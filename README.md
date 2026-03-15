@@ -1,4 +1,4 @@
-# 🍲 HomeMadeFodd — Food Delivery Web App
+# 🍲 HomeMadeFood — Food Delivery Web App
 
 A modern and responsive **Food Delivery Web Application** built using **React 18 and Vite** 
 
