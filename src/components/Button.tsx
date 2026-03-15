@@ -21,6 +21,7 @@ const Button = ({
     >
       {label}
     </ShadButton>
+    
   );
 };
 
