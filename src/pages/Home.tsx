@@ -118,11 +118,11 @@ const Home: React.FC = () => {
         </div>
 
         <div
-          className='w-full lg:w-[50%] flex justify-center items-center'
+          className='w-full mt-2 lg:w-[50%] flex justify-center items-center'
           style={{
             backgroundImage: `url(${isolate})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'cover',
           }}
         >
           <img
@@ -249,13 +249,13 @@ const Home: React.FC = () => {
 
       <p className='text-4xl text-center font-bold mt-12 mb-6'>As Seen In</p>
 
-      <div className='flex flex-wrap justify-center gap-8 border-b pb-6'>
+      <div className='flex flex-wrap justify-evenly gap-8 border-b pb-3 pt-3'>
         {[logo14, logo15, logo16, logo17, logo18, logo19, logo20].map(
           (img, i) => (
             <img
               key={i}
               src={img}
-              className='w-28 grayscale hover:grayscale-0 transition'
+              className=' h-10 grayscale hover:grayscale-0 transition'
             />
           ),
         )}

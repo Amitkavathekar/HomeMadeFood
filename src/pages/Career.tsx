@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Button from "../components/Button";
 import careerImage from "../assets/images/cafedine/imgi_7_.png";
 
+
 const Career: React.FC = () => {
   return (
     <section>

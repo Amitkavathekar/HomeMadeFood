@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="w-full bg-white shadow-xl text-gray-600">
-      <div className="flex justify-between items-center px-6 py-3 lg:py-4">
+      <div className="flex justify-between items-center  lg:justify-evenly px-6 py-3 lg:py-4">
 
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">

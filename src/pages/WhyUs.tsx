@@ -62,7 +62,7 @@ const WhyUs: React.FC = () => {
           {/* Right */}
           <div className='h-auto w-full lg:w-5/6 flex justify-center lg:justify-end'>
             <img
-              className='w-[80%] sm:w-[60%] lg:w-[80%] xl:w-[60%] mt-6 lg:mt-0'
+              className='w-[100%] sm:w-[50%] sm:ml-50 lg:w-[80%] xl:w-[60%] mt-6 lg:mt-0'
               src={img27}
               alt=''
             />
@@ -71,7 +71,7 @@ const WhyUs: React.FC = () => {
 
         <img
           src={vector}
-          className='h-32 mt-56 md:h-50 w-full absolute top-55 left-0'
+          className='h-32 sm:top-1 md:top-17 mt-145 md:h-50 w-full absolute top-55 left-0'
           alt=''
         />
       </section>
@@ -80,75 +80,74 @@ const WhyUs: React.FC = () => {
       <section className='w-full min-h-screen'>
         <div className='mt-10 m-auto w-[90%] lg:w-[70%] space-y-20'>
           {/* #1 */}
-          <div className='flex flex-col lg:flex-row items-center justify-between w-full gap-10'>
-            <img
-              className='h-60 sm:h-80 md:h-96'
-              src={img31}
-            />
-
-            <Card className='w-full   h-90  lg:w-[50%] bg-transparent border-none shadow-none'>
+          <div className='flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10'>
+            <Card className='w-full lg:w-[50%] bg-transparent border-none shadow-none'>
               <CardContent
-                className='bg-cover  z-1 h bg-no-repeat p-6 sm:p-10 '
+                className='bg-cover  z-1 h bg-no-repeat p-16 sm:p-10 '
                 style={{
-                  backgroundImage: `url(${img35})`,
-                  width: '500px',
-                  height: '300px',
+                  backgroundImage: `url(${img35},width: '450px',
+                  height: '300px',)`,
                 }}
               >
                 <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
-                  #1
+                  #4
                 </p>
 
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
-                  Say “NO” to unhealthy outside food
+                  Creating entrepreneurs in every home
                 </p>
 
                 <p className='mt-4 text-base md:text-xl'>
-                  Our neighbourhood kitchens are going to serve what they serve
-                  their family.
+                  Home chefs have cooked for families all their life without
+                  returns.
                 </p>
 
                 <p className='mt-3 text-base md:text-xl'>
-                  So, you can rest assured you’re getting healthy home food with
-                  soul.
+                  Now it’s time to reward them with sustainable business from
+                  home.
                 </p>
               </CardContent>
             </Card>
+
+            <img
+              className='h-60 sm:h-80 md:h-96'
+              src={img34}
+            />
           </div>
 
           {/* #2 */}
           <div className='flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10'>
             <Card className='w-full lg:w-[50%] bg-transparent border-none shadow-none'>
               <CardContent
-                className='bg-contain bg-no-repeat p-6 sm:p-10'
+                className='bg-cover  z-1 h bg-no-repeat p-16 sm:p-10 '
                 style={{
-                  backgroundImage: `url(${img35}
-                  )`,
+                  backgroundImage: `url(${img35},width: '450px',
+                  height: '300px',)`,
                 }}
               >
                 <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
-                  #2
+                  #4
                 </p>
 
                 <p className='text-2xl md:text-4xl font-bold text-[#E62841] mt-2'>
-                  Get the authentic taste of your regional food
+                  Creating entrepreneurs in every home
                 </p>
 
                 <p className='mt-4 text-base md:text-xl'>
-                  No geographical boundary can keep you from your own regional
-                  cuisine.
+                  Home chefs have cooked for families all their life without
+                  returns.
                 </p>
 
                 <p className='mt-3 text-base md:text-xl'>
-                  Find authentic regional home kitchens and order online
-                  instantly.
+                  Now it’s time to reward them with sustainable business from
+                  home.
                 </p>
               </CardContent>
             </Card>
 
             <img
               className='h-60 sm:h-80 md:h-96'
-              src={img32}
+              src={img34}
             />
           </div>
 
@@ -161,7 +160,7 @@ const WhyUs: React.FC = () => {
 
             <Card className='w-full lg:w-[50%] bg-transparent border-none shadow-none'>
               <CardContent
-                className='bg-contain bg-no-repeat p-6 sm:p-10'
+                className='bg-cover  z-1 h bg-no-repeat p-16 sm:p-10 '
                 style={{ backgroundImage: `url(${img35})` }}
               >
                 <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
@@ -188,8 +187,11 @@ const WhyUs: React.FC = () => {
           <div className='flex flex-col-reverse lg:flex-row items-center justify-between w-full gap-10'>
             <Card className='w-full lg:w-[50%] bg-transparent border-none shadow-none'>
               <CardContent
-                className='bg-contain bg-no-repeat p-6 sm:p-10'
-                style={{ backgroundImage: `url(${img35})` }}
+                className='bg-cover  z-1 h bg-no-repeat p-16 sm:p-10 '
+                style={{
+                  backgroundImage: `url(${img35},width: '450px',
+                  height: '300px',)`,
+                }}
               >
                 <p className='text-4xl md:text-5xl font-bold text-[#6ACBC0]'>
                   #4
@@ -222,14 +224,17 @@ const WhyUs: React.FC = () => {
       {/* What's Cooking */}
       <section
         className='relative w-full h-240 flex justify-center bg-cover bg-black/50 bg-blend-overlay py-20'
-        style={{ backgroundImage: `url(${img36})` }}
+        style={{
+          backgroundImage: `url(${img36})`,
+          height: 'auto',
+        }}
       >
         <img
           className='h-32 w-full absolute top-0 left-0'
           src={img38}
         />
 
-        <div className='flex flex-wrap justify-center w-[80%] h-[60%] gap-6 mt-20'>
+        <div className='flex flex-wrap justify-center w-[80%] h-[50%] gap-6 mt-20'>
           {[
             imgPunjabi,
             imgGujarati,
@@ -257,23 +262,23 @@ const WhyUs: React.FC = () => {
       </section>
 
       {/* Download */}
-      <section className='border relative lg:h-175 w-full flex justify-center items-center'>
+      <section className='border  relative h-100 lg:h-175 w-full flex justify-center items-center'>
         <img
-          className='w-full absolute -top-30 left-0'
+          className='w-full absolute -top-30   left-0 border '
           src={img28}
         />
-        <div className='lg:h-160 flex justify-between lg:w-[70%]'>
-          <div className='lg:w-full flex items-center'>
+        <div className=' flex justify-between lg:w-[70%]'>
+          <div className='  lg:w-full flex items-center'>
             <div>
-              <p className='text-4xl font-bold mt-10'>
+              <p className='text-4xl font-bold text-center '>
                 Get your homemade meal delivered today
               </p>
 
-              <p className='text-2xl font-bold mt-5 text-gray-500'>
+              <p className='text-2xl font-bold mt-5 text-gray-500 text-center'>
                 Download for free!
               </p>
 
-              <div className='flex gap-10 mt-5'>
+              <div className='flex justify-center gap-10 mt-5 '>
                 <img
                   src={qr}
                   className='w-[150px] h-[150px]'
@@ -297,18 +302,16 @@ const WhyUs: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className='flex items-center w-full'>
-            <img
-              src={homeChef}
-              className='w-[450px] h-[500px]'
-            />
-          </div>
         </div>
       </section>
+      <div className='  flex items-center justify-center w-full'>
+        <img
+          src={homeChef}
+          className='w-[450px] h-[500px]'
+        />
+      </div>
 
       <Separator className='my-10' />
-
       <Footer />
     </div>
   );
