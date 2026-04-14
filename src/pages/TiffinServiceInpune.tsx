@@ -1,13 +1,26 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Button from '../components/Button';
 
-import shaniwarwada from "../assets/images/shaniwarwada.webp";
-import deluxeMealPlan from "../assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png";
-import ecoFriendly from "../assets/images/eco-friendly-package.png";
-import scooter from "../assets/images/scooter.png";
-import setting from "../assets/images/setting.png";
-import repeat from "../assets/images/repeat.png";
+import shaniwarwada from '../assets/images/shaniwarwada.webp';
+import deluxeMealPlan from '../assets/images/Deluxe-Meal-Plan-for-Tiffin-Servicepune.png';
+import ecoFriendly from '../assets/images/eco-friendly-package.png';
+import scooter from '../assets/images/scooter.png';
+import setting from '../assets/images/setting.png';
+import repeat from '../assets/images/repeat.png';
+import howItWorkBackground from '../assets/images/howItWorkBackground.png';
+import one from '../assets/images/1.png';
+import two from '../assets/images/2.png';
+import three from '../assets/images/3.png';
+import fourth from '../assets/images/4.png';
+import five from '../assets/images/5.png';
+import six from '../assets/images/6.png';
+import Asset21 from '../assets/images/Asset21.webp';
+import Asset22 from '../assets/images/Asset22.webp';
+import Asset23 from '../assets/images/Asset23.webp';
+import Asset24 from '../assets/images/Asset24.webp';
+
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const TiffinServiceInpune: React.FC = () => {
   const [count, setcount] = useState<number>(0);
@@ -30,8 +43,59 @@ const TiffinServiceInpune: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
+  const cardData = [
+    {
+      id: 1,
+      number: '01',
+      image: one,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+    {
+      id: 2,
+      number: '02',
+      image: two,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+    {
+      id: 3,
+      number: '03',
+      image: three,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+    {
+      id: 4,
+      number: '01',
+      image: fourth,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+    {
+      id: 5,
+      number: '02',
+      image: five,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+    {
+      id: 6,
+      number: '0',
+      image: six,
+      heading: 'Download Mealawe App',
+      description:
+        'Download Mealawe app from iOS or Playstore. An app that has got all the traditional and regional flavours of India.',
+    },
+  ];
+
   return (
-   <>
+    <>
       {/* HERO SECTION */}
       <section>
         <div className='w-full h-155 flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-40 px-4 lg:px-10 py-10'>
@@ -64,7 +128,6 @@ const TiffinServiceInpune: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* YOUTUBE SECTION */}
       <section className='w-full bg-[#63AB45] flex flex-col lg:flex-row justify-center items-center py-10'>
         <div className='flex flex-col lg:flex-row justify-between items-center w-[95%] gap-8'>
@@ -93,7 +156,6 @@ const TiffinServiceInpune: React.FC = () => {
           </div>
         </div>
       </section>
-
       {/* MISSION SECTION */}
       <section className='w-full bg-[#EAE2B7] py-10 px-4 flex flex-col lg:flex-row items-center justify-between'>
         <div className='w-full lg:w-[50%] flex flex-col justify-start gap-6'>
@@ -142,7 +204,6 @@ const TiffinServiceInpune: React.FC = () => {
           />
         </div>
       </section>
-
       {/* UNIQUE SERVICE SECTION */}
       <section className='w-full py-10'>
         <div className='flex items-center justify-center mb-10'>
@@ -230,6 +291,98 @@ const TiffinServiceInpune: React.FC = () => {
           </div>
         </div>
       </section>
+      <section
+        style={{ backgroundImage: `url(${howItWorkBackground})` }}
+        className='w-full h-110 bg-cover bg-center'
+      />
+      <section>
+        <div className='grid md:grid-cols-3 gap-6 p-6 relative'>
+          {cardData.map((item) => (
+            <Card
+              key={item.id}
+              className='hover:shadow-xl text-center transform -translate-y-[150px] h-[520px] w-[360px]'
+            >
+              <CardHeader>
+                <CardTitle>{item.number}</CardTitle>
+              </CardHeader>
+
+              <CardContent>
+                <img
+                  src={item.image}
+                  alt={item.heading}
+                  className='w-full h-80 object-contain rounded-md'
+                />
+
+                <p className='mt-3 text-green-600 text-xl font-bold'>
+                  {item.heading}
+                </p>
+                <p className='mt-3 text-gray-600'>{item.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </section>
+      <p className='text-center text-5xl mt-0 font-bold'>
+        Our Subscription Plans
+      </p>
+      <p className='text-center text-2xl  mt-5 font-bold'>
+        One of the Best Tiffin Service in Pune
+      </p>
+      <div className='flex flex-wrap justify-center gap-8'>
+        {[
+          {
+            cal: Asset21,
+            img: Asset22,
+            title: 'Weekly Plan',
+          },
+          {
+            cal: Asset21,
+            img: Asset22,
+            title: 'Bi-Weekly Plan',
+          },
+          {
+            cal: Asset21,
+            img: Asset22,
+            title: 'Monthly Plan',
+          },
+        ].map((item, index) => (
+          <Card
+            key={index}
+            className='relative w-[280px] sm:w-[320px] h-[320px] border-2 border-green-500 rounded-2xl flex flex-col items-center justify-center shadow-md hover:shadow-xl transition'
+          >
+            {/* Calendar Icon */}
+            <img
+              src={item.cal}
+              alt='calendar'
+              className='absolute -top-6 w-12 h-12'
+            />
+
+            <CardContent className='flex flex-col items-center justify-center gap-4'>
+              {/* Food Image */}
+              <img
+                src={item.img}
+                alt={item.title}
+                className='w-40 h-40 object-contain'
+              />
+
+              {/* Title */}
+              <h2 className='text-xl font-semibold text-green-600 text-center'>
+                {item.title}
+              </h2>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+      <Link to='/signup'>
+        <div className='flex justify-center mt-5'>
+          <Button
+            className='w-50  m-auto h-12 rounded-3xl text-xl text-white font-bold hover:opacity-90 transition'
+            style={{ backgroundColor: '#63AB45' }}
+            label='Order Now'
+          />
+        </div>
+      </Link>
+      <div></div>
     </>
   );
 };
